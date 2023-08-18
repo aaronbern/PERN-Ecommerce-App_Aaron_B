@@ -1,0 +1,1001 @@
+id,product_grocery,price_grocery,expiration_date,quantity
+1,"Pasta - Lasagna Noodle, Frozen",$5.44,7/12/2023,29
+2,Clams - Bay,$5.11,1/11/2023,4
+3,Eel - Smoked,$3.96,12/25/2022,42
+4,"Sole - Dover, Whole, Fresh",$8.02,6/27/2023,14
+5,Ham - Cooked,$3.48,10/1/2022,92
+6,"Quail - Whole, Boneless",$5.84,5/6/2023,70
+7,Huck White Towels,$2.41,2/7/2023,5
+8,Bread Crumbs - Panko,$0.34,8/19/2022,89
+9,Bouillion - Fish,$5.09,11/10/2022,15
+10,Bread - 10 Grain Parisian,$7.02,10/28/2022,48
+11,"Basil - Primerba, Paste",$9.72,12/2/2022,53
+12,Lettuce - Sea / Sea Asparagus,$2.33,5/22/2023,48
+13,"Cherries - Bing, Canned",$7.36,5/15/2023,88
+14,Raspberries - Fresh,$7.51,3/6/2023,53
+15,Nantucket Apple Juice,$8.05,9/22/2022,1
+16,"Lentils - Green, Dry",$0.58,12/8/2022,38
+17,Syrup - Monin - Blue Curacao,$6.18,1/6/2023,1
+18,Artichokes - Jerusalem,$0.25,9/28/2022,39
+19,Wine - Shiraz Wolf Blass Premium,$4.62,4/11/2023,17
+20,"Juice - Apple, 1.36l",$7.18,5/8/2023,7
+21,Magnotta - Bel Paese White,$8.07,6/2/2023,100
+22,Ecolab - Lime - A - Way 4/4 L,$2.44,8/5/2023,33
+23,Salad Dressing,$1.26,6/29/2023,46
+24,Pork - Ground,$5.21,10/15/2022,99
+25,"Turkey - Breast, Bone - In",$4.83,6/28/2023,4
+26,Wine - Port Late Bottled Vintage,$3.94,1/10/2023,40
+27,Wine - Chianti Classica Docg,$5.37,11/30/2022,40
+28,Beef - Tender Tips,$8.71,12/22/2022,26
+29,"Lobster - Tail, 3 - 4 Oz",$8.82,9/7/2022,52
+30,"Beef - Rouladin, Sliced",$6.88,7/29/2023,42
+31,Kohlrabi,$6.61,1/10/2023,81
+32,Fruit Salad Deluxe,$9.04,5/31/2023,61
+33,Filo Dough,$8.62,11/11/2022,28
+34,Tahini Paste,$9.94,6/14/2023,25
+35,Garam Marsala,$8.35,7/16/2023,74
+36,Tea - Decaf Lipton,$2.07,6/9/2023,95
+37,Potatoes - Yukon Gold 5 Oz,$4.39,2/2/2023,42
+38,Vinegar - Red Wine,$4.00,12/7/2022,69
+39,Tuna - Yellowfin,$3.05,11/11/2022,73
+40,Tomatoes - Heirloom,$1.82,5/11/2023,39
+41,Gatorade - Lemon Lime,$3.46,3/22/2023,80
+42,Turnip - White,$3.47,10/6/2022,26
+43,Wine - Dubouef Macon - Villages,$3.44,1/29/2023,83
+44,"Oil - Food, Lacquer Spray",$1.21,9/25/2022,76
+45,Beer - Rickards Red,$3.30,3/20/2023,34
+46,Soup - Base Broth Chix,$7.72,6/29/2023,98
+47,"Appetizer - Spring Roll, Veg",$3.61,12/25/2022,53
+48,Hand Towel,$4.73,9/16/2022,65
+49,Tomatoes - Roma,$7.24,6/24/2023,85
+50,Potatoes - Mini Red,$3.57,10/26/2022,43
+51,Bagel - Plain,$9.04,11/29/2022,67
+52,Appetiser - Bought,$0.38,2/5/2023,57
+53,Pepper - Scotch Bonnet,$8.89,12/17/2022,79
+54,"Chocolate - Pistoles, Lactee, Milk",$0.30,5/20/2023,23
+55,Everfresh Products,$5.89,3/15/2023,54
+56,"Veal - Shank, Pieces",$9.17,11/16/2022,79
+57,Sausage - Meat,$4.42,6/3/2023,31
+58,Peas - Frozen,$1.40,6/16/2023,80
+59,Anchovy In Oil,$1.34,9/6/2022,4
+60,"Mushroom - Porcini, Dry",$7.54,4/27/2023,20
+61,Gooseberry,$9.40,2/17/2023,42
+62,Sobe - Cranberry Grapefruit,$4.69,2/23/2023,34
+63,Ecolab - Balanced Fusion,$5.67,4/29/2023,5
+64,Ice Cream - Turtles Stick Bar,$6.05,10/8/2022,36
+65,Ginger - Crystalized,$5.41,4/5/2023,32
+66,Oil - Sesame,$8.82,4/12/2023,36
+67,The Pop Shoppe Pinapple,$4.25,4/4/2023,49
+68,Puree - Raspberry,$8.58,9/20/2022,18
+69,Beer - Sleemans Honey Brown,$9.13,8/6/2023,46
+70,"Pasta - Canelloni, Single Serve",$8.04,8/25/2022,80
+71,Apron,$9.83,3/28/2023,31
+72,Tobasco Sauce,$5.40,9/18/2022,80
+73,Sobe - Green Tea,$4.19,1/20/2023,41
+74,Oil - Cooking Spray,$2.38,12/31/2022,19
+75,"Liners - Banana, Paper",$7.70,10/23/2022,39
+76,Laundry - Bag Cloth,$6.56,4/1/2023,50
+77,Sugar - Palm,$3.97,1/24/2023,78
+78,Water - Green Tea Refresher,$3.39,7/6/2023,65
+79,Cake - Pancake,$7.10,8/24/2022,57
+80,"Quail - Whole, Boneless",$2.19,8/23/2022,29
+81,Trout - Smoked,$9.38,4/9/2023,62
+82,Crackers - Soda / Saltins,$7.80,12/14/2022,41
+83,Dr. Pepper - 355ml,$4.16,6/26/2023,86
+84,"Pepper - White, Ground",$9.38,7/3/2023,81
+85,"Cheese - Brie,danish",$3.35,8/20/2022,6
+86,Tamarillo,$8.65,11/21/2022,46
+87,Compound - Raspberry,$4.50,11/10/2022,14
+88,"Yogurt - Strawberry, 175 Gr",$1.36,6/22/2023,75
+89,"Soup - Campbells, Classic Chix",$5.98,2/19/2023,46
+90,Sausage - Meat,$8.41,3/8/2023,15
+91,Veal - Striploin,$9.32,4/11/2023,90
+92,Nacho Chips,$0.93,4/28/2023,97
+93,Hagen Daza - Dk Choocolate,$8.04,8/8/2023,98
+94,Lentils - Green Le Puy,$1.61,2/2/2023,65
+95,Cheese - Parmigiano Reggiano,$2.49,4/1/2023,8
+96,Plasticspoonblack,$9.99,3/25/2023,37
+97,Mayonnaise,$3.20,5/27/2023,75
+98,Sobe - Berry Energy,$2.46,2/16/2023,82
+99,Cheese - Ricotta,$3.02,8/18/2022,100
+100,"Shrimp - Baby, Warm Water",$8.90,9/28/2022,60
+101,Chutney Sauce - Mango,$6.97,2/8/2023,16
+102,Wine - Vouvray Cuvee Domaine,$0.69,10/8/2022,88
+103,Soup - Tomato Mush. Florentine,$9.01,8/29/2022,87
+104,Crab - Meat,$0.59,1/8/2023,28
+105,Chips - Assorted,$5.69,12/17/2022,18
+106,Jicama,$6.06,6/4/2023,25
+107,Plums - Red,$7.50,6/24/2023,29
+108,Milk - Chocolate 500ml,$5.24,3/8/2023,27
+109,Wine - Fino Tio Pepe Gonzalez,$8.45,2/4/2023,77
+110,Wine - Beringer Founders Estate,$8.64,8/26/2022,81
+111,Wine - Chablis 2003 Champs,$3.44,11/11/2022,100
+112,Bread Crumbs - Japanese Style,$3.74,9/29/2022,91
+113,Tuna - Yellowfin,$9.80,2/16/2023,1
+114,Beef Ground Medium,$0.40,6/3/2023,15
+115,Eggplant - Regular,$8.93,11/14/2022,16
+116,Flour - Semolina,$8.45,6/18/2023,93
+117,"Lemonade - Natural, 591 Ml",$9.58,5/19/2023,95
+118,Ice Cream Bar - Hageen Daz To,$7.42,9/13/2022,35
+119,Dry Ice,$4.54,6/7/2023,7
+120,Cookies - Fortune,$1.34,7/31/2023,5
+121,Cream - 18%,$1.27,5/2/2023,83
+122,"Clams - Littleneck, Whole",$0.94,1/19/2023,45
+123,"Bread - Pita, Mini",$0.76,2/7/2023,47
+124,"Cheese - Havarti, Roasted Garlic",$9.14,7/19/2023,41
+125,Bread - Bistro White,$3.00,2/3/2023,94
+126,Cheese - Cheddarsliced,$7.48,1/1/2023,20
+127,Cheese - Goat,$4.31,1/31/2023,22
+128,Juice - Ocean Spray Kiwi,$8.76,11/22/2022,40
+129,Plaintain,$5.18,5/10/2023,100
+130,Gloves - Goldtouch Disposable,$8.10,12/26/2022,61
+131,Squid - Tubes / Tenticles 10/20,$4.94,12/22/2022,51
+132,Pork - European Side Bacon,$1.06,7/23/2023,43
+133,Island Oasis - Magarita Mix,$1.58,11/9/2022,52
+134,Cabbage Roll,$5.19,9/14/2022,22
+135,Wine - Merlot Vina Carmen,$6.12,10/26/2022,27
+136,"Fish - Atlantic Salmon, Cold",$9.85,5/18/2023,13
+137,Table Cloth 81x81 Colour,$1.55,11/10/2022,14
+138,"Pasta - Fusili, Dry",$7.15,10/23/2022,81
+139,"Vodka - Lemon, Absolut",$1.07,2/26/2023,98
+140,Appetizer - Shrimp Puff,$8.98,6/2/2023,56
+141,Plastic Arrow Stir Stick,$1.11,11/26/2022,4
+142,Nantucket - 518ml,$4.18,1/22/2023,33
+143,Macaroons - Homestyle Two Bit,$0.44,3/20/2023,48
+144,Bandage - Fexible 1x3,$2.67,11/8/2022,72
+145,Jerusalem Artichoke,$0.83,9/5/2022,50
+146,Bread - Hamburger Buns,$0.87,7/9/2023,21
+147,Cocoa Feuilletine,$3.52,3/31/2023,11
+148,"Wine - Red, Colio Cabernet",$3.64,11/1/2022,73
+149,"Quail - Whole, Boneless",$4.87,9/28/2022,16
+150,Garbage Bags - Clear,$4.07,2/14/2023,38
+151,Honey - Liquid,$1.29,9/27/2022,79
+152,Pie Shell - 5,$6.01,3/8/2023,46
+153,Eggplant Italian,$5.92,2/17/2023,2
+154,Chocolate Bar - Reese Pieces,$4.45,1/10/2023,19
+155,Bread - Italian Sesame Poly,$5.75,7/29/2023,21
+156,Soup Knorr Chili With Beans,$2.75,6/20/2023,18
+157,"Veal - Shank, Pieces",$4.30,7/17/2023,46
+158,Chip - Potato Dill Pickle,$3.63,11/13/2022,27
+159,Cheese - Cheddar With Claret,$0.00,1/29/2023,12
+160,Cookies - Englishbay Oatmeal,$0.39,12/7/2022,78
+161,Trueblue - Blueberry Cranberry,$0.39,5/23/2023,11
+162,"Yogurt - Raspberry, 175 Gr",$5.00,1/8/2023,18
+163,Horseradish Root,$1.95,1/27/2023,78
+164,Lemons,$2.41,10/10/2022,44
+165,Water - Spring Water 500ml,$8.57,3/31/2023,17
+166,"Wine - White, Chardonnay",$5.29,11/4/2022,27
+167,Pie Filling - Pumpkin,$3.76,6/1/2023,85
+168,Cake Sheet Combo Party Pack,$0.86,10/25/2022,44
+169,Filter - Coffee,$7.10,8/24/2022,83
+170,Cup - 4oz Translucent,$9.73,9/14/2022,55
+171,Wine - Muscadet Sur Lie,$6.50,3/27/2023,58
+172,Mountain Dew,$4.34,8/28/2022,20
+173,Extract - Almond,$0.71,11/2/2022,57
+174,Water - Green Tea Refresher,$9.20,12/14/2022,11
+175,Sprouts - Alfalfa,$0.65,1/2/2023,48
+176,Tandoori Curry Paste,$8.85,2/7/2023,1
+177,Veal - Liver,$7.38,12/1/2022,50
+178,Beans - Fava Fresh,$0.50,6/18/2023,60
+179,Cranberries - Frozen,$4.16,10/14/2022,18
+180,Broom - Corn,$1.96,12/13/2022,54
+181,Ostrich - Prime Cut,$6.80,2/13/2023,14
+182,Pasta - Orecchiette,$5.42,4/4/2023,88
+183,Lemon Balm - Fresh,$2.41,12/15/2022,99
+184,"Wine - White, Gewurtzraminer",$1.57,8/19/2022,23
+185,Vol Au Vents,$2.98,9/24/2022,87
+186,Pastry - Baked Scones - Mini,$3.88,11/8/2022,37
+187,"Pasta - Fettuccine, Egg, Fresh",$4.82,1/25/2023,2
+188,Napkin White,$6.58,5/14/2023,14
+189,Molasses - Fancy,$7.65,7/23/2023,65
+190,"Bread - Rolls, Rye",$0.81,4/2/2023,94
+191,Sage - Fresh,$1.87,5/23/2023,70
+192,Orange - Blood,$9.36,11/23/2022,67
+193,Bread - Rosemary Focaccia,$2.14,7/30/2023,39
+194,"Halibut - Whole, Fresh",$1.21,9/28/2022,35
+195,"Coconut - Creamed, Pure",$5.34,7/5/2023,3
+196,Chocolate - Feathers,$6.76,3/7/2023,3
+197,Cheese - Camembert,$5.15,12/29/2022,89
+198,Bread Country Roll,$2.96,10/30/2022,57
+199,Turnip - Wax,$4.97,1/9/2023,47
+200,Wine - Magnotta - Bel Paese White,$3.76,12/23/2022,90
+201,"Bread - Pumpernickle, Rounds",$3.80,11/18/2022,85
+202,Cheese - Pont Couvert,$6.14,8/31/2022,38
+203,Flower - Daisies,$0.37,6/28/2023,5
+204,Fork - Plastic,$6.02,3/5/2023,27
+205,Brandy - Bar,$7.32,1/21/2023,79
+206,Longos - Chicken Curried,$9.36,6/2/2023,90
+207,Eggs - Extra Large,$2.34,1/7/2023,33
+208,Apple - Custard,$9.34,11/13/2022,88
+209,Flour - Pastry,$8.21,12/14/2022,74
+210,Coffee Caramel Biscotti,$6.95,12/7/2022,41
+211,Apple - Royal Gala,$4.97,1/21/2023,51
+212,Bread Roll Foccacia,$2.29,1/26/2023,44
+213,"Cheese - Romano, Grated",$7.74,4/16/2023,79
+214,Crackers - Soda / Saltins,$6.74,2/12/2023,98
+215,Gelatine Leaves - Bulk,$6.43,4/27/2023,80
+216,Edible Flower - Mixed,$8.27,1/8/2023,34
+217,Tea Peppermint,$5.36,11/12/2022,35
+218,Cheese - Brie,$9.46,7/11/2023,28
+219,"Cheese - Romano, Grated",$7.19,4/17/2023,76
+220,Fruit Salad Deluxe,$3.52,10/11/2022,71
+221,Petit Baguette,$9.88,8/6/2023,9
+222,Cheese - Brie,$0.10,7/10/2023,73
+223,Wine - Rhine Riesling Wolf Blass,$2.54,4/1/2023,75
+224,"Tomatoes - Plum, Canned",$2.43,2/12/2023,6
+225,Relish,$4.70,12/3/2022,29
+226,Wine - Valpolicella Masi,$8.91,10/13/2022,51
+227,Kiwano,$0.68,1/1/2023,23
+228,"Hickory Smoke, Liquid",$0.78,5/29/2023,94
+229,Veal - Nuckle,$4.84,2/23/2023,93
+230,Muffin Mix - Raisin Bran,$3.88,3/20/2023,51
+231,Pate Pans Yellow,$0.26,1/11/2023,74
+232,Grapes - Red,$9.29,4/11/2023,73
+233,"Seedlings - Buckwheat, Organic",$3.37,2/8/2023,5
+234,Island Oasis - Peach Daiquiri,$2.13,4/30/2023,14
+235,"Pork - Bacon,back Peameal",$0.97,11/16/2022,62
+236,Pepper - Scotch Bonnet,$0.49,11/5/2022,11
+237,Beer - Mcauslan Apricot,$7.36,1/15/2023,17
+238,Vinegar - Raspberry,$7.11,4/1/2023,69
+239,"Jam - Blackberry, 20 Ml Jar",$3.72,9/15/2022,48
+240,Bread - Flat Bread,$5.61,12/16/2022,51
+241,Longan,$3.27,5/25/2023,15
+242,"Veal - Brisket, Provimi, Bone - In",$2.92,10/3/2022,43
+243,Silicone Paper 16.5x24,$2.37,3/11/2023,5
+244,Alize Gold Passion,$3.88,3/28/2023,55
+245,Mace,$5.38,5/6/2023,80
+246,Ecolab - Hand Soap Form Antibac,$7.13,9/8/2022,25
+247,Wine - Sicilia Igt Nero Avola,$5.24,8/31/2022,39
+248,Bandage - Flexible Neon,$0.10,4/9/2023,74
+249,Nestea - Iced Tea,$3.80,2/2/2023,23
+250,Napkin White,$1.07,5/20/2023,43
+251,"Marjoram - Dried, Rubbed",$2.43,4/13/2023,23
+252,Bread Fig And Almond,$2.75,5/24/2023,59
+253,Raisin - Golden,$4.57,9/26/2022,44
+254,Jagermeister,$0.02,10/30/2022,88
+255,"Salmon - Smoked, Sliced",$6.75,5/24/2023,30
+256,Butter Ripple - Phillips,$4.25,7/9/2023,73
+257,"Juice - Grapefruit, 341 Ml",$3.24,4/1/2023,56
+258,Gatorade - Fruit Punch,$3.30,6/22/2023,88
+259,Cream - 10%,$6.72,6/9/2023,84
+260,"Soda Water - Club Soda, 355 Ml",$1.25,11/26/2022,39
+261,Mortadella,$3.28,8/23/2022,43
+262,"Veal - Brisket, Provimi,bnls",$1.79,10/6/2022,70
+263,"Sparkling Wine - Rose, Freixenet",$4.50,7/8/2023,84
+264,Country Roll,$3.48,11/2/2022,100
+265,"Cheese - Cheddar, Old White",$4.24,12/24/2022,56
+266,Passion Fruit,$7.33,8/5/2023,56
+267,V8 Splash Strawberry Banana,$4.57,7/16/2023,76
+268,"Wine - White, Lindemans Bin 95",$6.42,7/2/2023,98
+269,Bread Crumbs - Japanese Style,$3.89,5/2/2023,89
+270,Lettuce - Red Leaf,$9.25,3/11/2023,75
+271,Beer - Blue Light,$1.33,1/4/2023,32
+272,Whmis - Spray Bottle Trigger,$8.69,4/27/2023,36
+273,"Wine - Red, Cooking",$2.56,8/13/2023,34
+274,"Syrup - Golden, Lyles",$0.05,8/27/2022,32
+275,"Juice - Tomato, 10 Oz",$1.27,2/25/2023,1
+276,Butter - Salted,$2.19,6/22/2023,96
+277,Coffee - Ristretto Coffee Capsule,$9.03,8/18/2022,59
+278,Nantucket - Orange Mango Cktl,$8.27,2/23/2023,77
+279,Carbonated Water - Blackcherry,$2.12,4/15/2023,80
+280,Oranges,$5.16,6/22/2023,14
+281,Appetizer - Mango Chevre,$2.02,1/17/2023,79
+282,Beef - Prime Rib Aaa,$0.06,12/2/2022,11
+283,Cup - 8oz Coffee Perforated,$0.50,4/12/2023,54
+284,"Bar Mix - Pina Colada, 355 Ml",$8.50,4/12/2023,18
+285,"Leeks - Baby, White",$0.93,4/23/2023,88
+286,Wine - White Cab Sauv.on,$1.96,8/17/2022,25
+287,Asparagus - Frozen,$5.45,8/18/2022,84
+288,"Pasta - Canelloni, Single Serve",$8.87,3/20/2023,9
+289,Quail - Jumbo Boneless,$7.08,8/20/2022,31
+290,"Wine - Harrow Estates, Vidal",$4.57,4/12/2023,49
+291,Tea - Mint,$2.63,9/15/2022,2
+292,Sauce - Thousand Island,$9.79,10/4/2022,23
+293,Beans - Yellow,$3.83,8/3/2023,68
+294,Cheese - Mozzarella,$4.34,2/20/2023,9
+295,Shopper Bag - S - 4,$9.98,5/11/2023,92
+296,Beef - Top Sirloin,$0.21,2/3/2023,53
+297,Lidsoupcont Rp12dn,$6.67,3/4/2023,72
+298,Wine - Mondavi Coastal Private,$6.57,6/13/2023,4
+299,"Soup - Knorr, Ministrone",$1.99,9/23/2022,49
+300,Lamb - Shoulder,$1.50,3/25/2023,78
+301,Red Currant Jelly,$1.87,7/23/2023,7
+302,Wine - Casablanca Valley,$3.34,1/10/2023,88
+303,Halibut - Steaks,$3.85,11/13/2022,8
+304,Soup - Boston Clam Chowder,$6.37,12/18/2022,81
+305,Egg Patty Fried,$4.82,4/13/2023,61
+306,Pickerel - Fillets,$5.21,5/19/2023,51
+307,Cheese - Bocconcini,$5.24,7/7/2023,29
+308,Paper - Brown Paper Mini Cups,$5.24,7/30/2023,56
+309,Sprouts - Alfalfa,$0.95,8/4/2023,81
+310,Sage - Rubbed,$3.03,1/14/2023,3
+311,Soup - French Can Pea,$2.19,9/10/2022,86
+312,"Beef - Rouladin, Sliced",$0.06,9/8/2022,48
+313,Pepper - Sorrano,$3.65,4/8/2023,1
+314,Oil - Canola,$0.19,6/24/2023,92
+315,Sauce Bbq Smokey,$9.24,6/16/2023,23
+316,Momiji Oroshi Chili Sauce,$5.96,7/7/2023,87
+317,Avocado,$3.63,2/18/2023,20
+318,Turkey - Ground. Lean,$7.81,8/8/2023,74
+319,Lotus Root,$8.18,8/7/2023,22
+320,Beer - Steamwhistle,$0.42,8/13/2023,35
+321,Tuna - Fresh,$3.84,5/4/2023,81
+322,Longos - Burritos,$2.99,3/21/2023,19
+323,Sweet Pea Sprouts,$1.44,11/28/2022,74
+324,"Beans - Long, Chinese",$1.03,12/21/2022,91
+325,Chinese Foods - Plain Fried Rice,$9.75,8/19/2022,45
+326,Wine - Mondavi Coastal Private,$5.29,7/28/2023,28
+327,Onions - White,$1.28,11/19/2022,26
+328,Emulsifier,$4.81,4/30/2023,63
+329,Banana - Green,$6.03,5/12/2023,70
+330,Scallops - In Shell,$4.73,6/29/2023,89
+331,Wine - Beaujolais Villages,$8.98,11/22/2022,84
+332,Cassis,$6.39,8/29/2022,46
+333,"Oil - Shortening,liqud, Fry",$4.05,7/27/2023,88
+334,"Cheese - Mozzarella, Shredded",$2.09,8/2/2023,44
+335,"Gingerale - Schweppes, 355 Ml",$9.49,6/18/2023,64
+336,"Tart Shells - Sweet, 2",$6.14,6/7/2023,15
+337,Salt - Table,$5.55,8/12/2023,35
+338,Wine - Gato Negro Cabernet,$9.09,5/31/2023,46
+339,Basil - Seedlings Cookstown,$5.11,10/6/2022,20
+340,General Purpose Trigger,$8.40,1/10/2023,77
+341,Appetizer - Mango Chevre,$4.46,1/30/2023,85
+342,Tea - Green,$7.27,9/12/2022,22
+343,Napkin - Beverage 1 Ply,$8.84,11/19/2022,2
+344,Wine - Piper Heidsieck Brut,$8.60,5/27/2023,72
+345,Wine - Hardys Bankside Shiraz,$9.90,6/18/2023,96
+346,Scampi Tail,$9.12,9/9/2022,65
+347,Green Tea Refresher,$8.54,2/10/2023,86
+348,Coffee Swiss Choc Almond,$5.59,6/23/2023,60
+349,Wine - Sauvignon Blanc Oyster,$7.77,1/2/2023,32
+350,Tea - Herbal Sweet Dreams,$6.40,7/27/2023,96
+351,Appetizer - Crab And Brie,$7.17,1/30/2023,55
+352,Puff Pastry - Sheets,$3.49,8/21/2022,9
+353,Beef - Short Loin,$6.19,8/30/2022,48
+354,Carrots - Jumbo,$2.88,8/1/2023,72
+355,Cabbage - Nappa,$9.67,4/11/2023,18
+356,Beef - Tenderloin,$4.99,11/23/2022,71
+357,"Club Soda - Schweppes, 355 Ml",$8.55,3/22/2023,38
+358,Wiberg Super Cure,$7.79,10/19/2022,86
+359,"Yogurt - Peach, 175 Gr",$3.21,7/5/2023,68
+360,"Soup - Knorr, French Onion",$7.24,6/14/2023,42
+361,Ice Cream - Fudge Bars,$5.22,5/10/2023,98
+362,"Soup - Knorr, Chicken Gumbo",$4.19,2/6/2023,11
+363,Coffee - French Vanilla Frothy,$0.22,5/7/2023,34
+364,Foam Espresso Cup Plain White,$0.65,3/4/2023,76
+365,Wine - Mondavi Coastal Private,$5.57,2/6/2023,56
+366,Cactus Pads,$7.39,2/10/2023,89
+367,Muffin Hinge - 211n,$6.63,3/28/2023,98
+368,Cheese - Asiago,$6.59,5/7/2023,43
+369,Butter Ripple - Phillips,$2.46,7/2/2023,13
+370,V8 Splash Strawberry Banana,$6.61,4/12/2023,83
+371,"Shrimp - Baby, Cold Water",$4.19,8/12/2023,52
+372,Water - Spring 1.5lit,$4.57,8/21/2022,79
+373,Venison - Racks Frenched,$8.90,6/8/2023,62
+374,Cheese - Oka,$7.53,2/17/2023,41
+375,Ice Cream - Fudge Bars,$5.46,12/25/2022,21
+376,"Wine - White, Chardonnay",$5.32,12/10/2022,7
+377,Leeks - Large,$3.82,2/12/2023,34
+378,Bagelers - Cinn / Brown Sugar,$4.92,5/24/2023,80
+379,Beer - Labatt Blue,$9.37,7/25/2023,42
+380,Salt - Seasoned,$0.26,1/24/2023,4
+381,Mix - Cocktail Strawberry Daiquiri,$0.43,4/4/2023,74
+382,Basil - Seedlings Cookstown,$7.47,4/9/2023,55
+383,Fennel,$1.70,3/28/2023,40
+384,Bread - Calabrese Baguette,$3.86,7/14/2023,79
+385,Lettuce - Curly Endive,$5.22,7/12/2023,16
+386,Pepsi - 600ml,$5.39,7/20/2023,74
+387,"Chicken - Leg, Fresh",$2.08,3/1/2023,88
+388,Cheese - Swiss Sliced,$6.28,8/28/2022,43
+389,Chervil - Fresh,$1.99,11/22/2022,58
+390,Jolt Cola,$0.15,2/10/2023,65
+391,Cookies Cereal Nut,$1.79,12/5/2022,77
+392,"Pasta - Lasagne, Fresh",$1.08,10/14/2022,80
+393,"Pork - Bacon, Sliced",$5.13,1/29/2023,66
+394,Soup Campbells - Italian Wedding,$8.25,4/28/2023,43
+395,Pie Shells 10,$2.09,12/12/2022,6
+396,"Veal - Round, Eye Of",$6.98,3/17/2023,87
+397,Cheese - Wine,$4.35,6/10/2023,95
+398,Soup - French Onion,$8.81,4/26/2023,86
+399,Appetizer - Lobster Phyllo Roll,$7.14,2/26/2023,29
+400,Nantucket Apple Juice,$1.97,1/20/2023,68
+401,Nantucket - Pomegranate Pear,$6.55,1/20/2023,81
+402,Dome Lid Clear P92008h,$2.93,5/30/2023,3
+403,"Fish - Artic Char, Cold Smoked",$6.74,9/6/2022,93
+404,Garlic Powder,$7.10,12/13/2022,44
+405,Cheese - Augre Des Champs,$1.90,7/30/2023,47
+406,Extract - Lemon,$9.41,8/25/2022,71
+407,Bread - Multigrain,$3.15,12/11/2022,23
+408,Creme De Cacao Mcguines,$4.55,8/14/2023,18
+409,Apricots - Halves,$4.30,1/17/2023,20
+410,Ostrich - Fan Fillet,$0.07,1/16/2023,96
+411,Vinegar - Champagne,$2.25,10/15/2022,76
+412,Sugar - Crumb,$4.53,12/1/2022,58
+413,"Sugar - Sweet N Low, Individual",$6.83,5/12/2023,52
+414,"Fish - Artic Char, Cold Smoked",$8.40,1/3/2023,65
+415,Mace Ground,$5.39,5/27/2023,43
+416,"Olives - Black, Pitted",$3.65,5/21/2023,18
+417,Red Cod Fillets - 225g,$7.83,3/3/2023,88
+418,Pasta - Orecchiette,$3.73,10/6/2022,82
+419,Pork Loin Bine - In Frenched,$4.19,8/28/2022,13
+420,Table Cloth 62x114 White,$3.51,7/26/2023,64
+421,Beer - Corona,$4.91,3/8/2023,89
+422,Beer - Sleemans Cream Ale,$6.18,11/22/2022,44
+423,The Pop Shoppe Pinapple,$3.26,2/26/2023,60
+424,Prunes - Pitted,$3.52,10/25/2022,4
+425,Pepper - Chilli Seeds Mild,$3.17,6/11/2023,56
+426,Munchies Honey Sweet Trail Mix,$8.46,6/1/2023,85
+427,Sesame Seed,$7.34,2/12/2023,49
+428,"Beef - Ox Tail, Frozen",$6.91,3/20/2023,20
+429,Mustard - Seed,$8.49,7/23/2023,23
+430,"Turnip - White, Organic",$1.45,1/17/2023,91
+431,Shrimp - Tiger 21/25,$1.19,5/1/2023,6
+432,Cookies Almond Hazelnut,$0.90,5/1/2023,58
+433,Wine - Magnotta - Cab Sauv,$7.53,3/15/2023,19
+434,Pepper - Red Bell,$1.82,1/5/2023,90
+435,Coffee - Espresso,$8.11,4/19/2023,35
+436,Sugar - White Packet,$3.40,7/12/2023,60
+437,"Wine - Red, Harrow Estates, Cab",$4.23,6/14/2023,88
+438,Rappini - Andy Boy,$2.74,5/18/2023,47
+439,Monkfish Fresh - Skin Off,$9.85,7/25/2023,49
+440,Glass Clear 7 Oz Xl,$2.30,11/20/2022,5
+441,"Lamb - Whole Head Off,nz",$9.62,6/24/2023,62
+442,"Spoon - Soup, Plastic",$8.79,10/4/2022,13
+443,Soup - Campbells Bean Medley,$7.72,12/22/2022,61
+444,Onions - Spanish,$1.62,5/18/2023,82
+445,Wine - Puligny Montrachet A.,$0.77,3/12/2023,87
+446,Beef Tenderloin Aaa,$2.50,2/27/2023,81
+447,Pecan Raisin - Tarts,$2.10,5/4/2023,16
+448,"Flour - Corn, Fine",$6.68,6/15/2023,31
+449,Flour - Masa De Harina Mexican,$8.43,9/22/2022,41
+450,Carbonated Water - Peach,$6.72,6/2/2023,69
+451,"Pepper - White, Whole",$2.18,11/4/2022,99
+452,Pecan Raisin - Tarts,$0.70,3/9/2023,51
+453,Juice - Lime,$8.70,7/12/2023,54
+454,Five Alive Citrus,$2.86,1/22/2023,36
+455,Chocolate Bar - Smarties,$3.64,5/23/2023,20
+456,"Iced Tea - Lemon, 340ml",$0.03,5/11/2023,99
+457,Bread - Rye,$1.67,4/4/2023,91
+458,Beef - Tender Tips,$0.19,4/28/2023,44
+459,"Syrup - Monin, Amaretta",$6.45,7/3/2023,80
+460,Pie Shell - 9,$4.77,8/22/2022,14
+461,Water Chestnut - Canned,$6.14,1/24/2023,9
+462,Passion Fruit,$4.46,7/20/2023,61
+463,Energy Drink Red Bull,$0.27,11/6/2022,17
+464,Shortbread - Cookie Crumbs,$2.50,5/1/2023,24
+465,Mousse - Mango,$5.77,10/25/2022,77
+466,Eggs - Extra Large,$6.87,8/19/2022,85
+467,Steam Pan Full Lid,$5.70,9/29/2022,10
+468,Madeira,$3.72,11/29/2022,59
+469,Fudge - Chocolate Fudge,$4.94,1/31/2023,60
+470,Sausage - Breakfast,$5.56,10/13/2022,16
+471,"Water - Mineral, Natural",$0.25,12/26/2022,72
+472,Pear - Prickly,$3.14,3/26/2023,2
+473,Sauce - Demi Glace,$9.83,11/24/2022,25
+474,Steampan - Half Size Shallow,$7.90,5/9/2023,36
+475,Cakes Assorted,$9.79,10/29/2022,40
+476,Ecolab Digiclean Mild Fm,$5.00,11/16/2022,42
+477,Kiwi,$4.09,9/26/2022,34
+478,"Bread - Bagels, Plain",$7.79,7/24/2023,8
+479,"Squash - Pattypan, Yellow",$0.97,11/6/2022,44
+480,Glass Clear 8 Oz,$1.81,9/23/2022,24
+481,Tomatoes Tear Drop,$1.39,8/22/2022,77
+482,Parasol Pick Stir Stick,$7.05,9/30/2022,29
+483,Muffin - Mix - Creme Brule 15l,$3.01,10/6/2022,4
+484,Wine - Chateau Aqueria Tavel,$4.06,10/13/2022,46
+485,Towel Multifold,$0.95,1/15/2023,19
+486,Carbonated Water - Raspberry,$1.78,10/13/2022,75
+487,Juice - Happy Planet,$2.67,3/26/2023,4
+488,Tofu - Soft,$7.52,12/3/2022,87
+489,Oil - Grapeseed Oil,$2.59,1/18/2023,80
+490,Lettuce - Boston Bib - Organic,$8.43,6/9/2023,100
+491,Cakes Assorted,$1.95,12/31/2022,63
+492,Wine - Chablis 2003 Champs,$6.94,3/28/2023,51
+493,Knife Plastic - White,$0.06,2/9/2023,15
+494,Ham Black Forest,$4.82,5/15/2023,11
+495,"Syrup - Monin, Amaretta",$2.12,6/6/2023,16
+496,Carrots - Jumbo,$5.47,5/31/2023,82
+497,Beef - Kobe Striploin,$6.48,1/12/2023,67
+498,Pasta - Orecchiette,$9.91,5/27/2023,98
+499,"Plate - Foam, Bread And Butter",$5.28,5/18/2023,87
+500,Tomatoes - Cherry,$3.11,12/19/2022,53
+501,"Juice - Grapefruit, 341 Ml",$9.30,7/4/2023,32
+502,Hinge W Undercut,$0.59,6/8/2023,19
+503,"Rum - White, Gg White",$0.82,11/23/2022,82
+504,Pecan Raisin - Tarts,$0.80,2/22/2023,13
+505,Spice - Chili Powder Mexican,$5.96,12/10/2022,20
+506,Vinegar - Sherry,$6.32,7/28/2023,30
+507,Oven Mitts - 15 Inch,$0.48,8/12/2023,74
+508,Sauce - Marinara,$5.80,2/27/2023,66
+509,Sauce - Alfredo,$1.04,1/26/2023,65
+510,Gelatine Leaves - Bulk,$7.16,6/13/2023,50
+511,Carrots - Jumbo,$8.02,7/31/2023,65
+512,Bag - Clear 7 Lb,$2.74,3/6/2023,69
+513,Grapes - Red,$6.51,4/28/2023,76
+514,Gatorade - Orange,$4.17,8/12/2023,94
+515,"Soup - Campbells, Lentil",$6.83,12/4/2022,95
+516,"Dill - Primerba, Paste",$8.68,5/11/2023,34
+517,Chicken - Soup Base,$0.37,2/12/2023,56
+518,Lettuce - Radicchio,$3.77,7/24/2023,62
+519,Lemon Pepper,$4.83,6/19/2023,39
+520,Bread - Italian Roll With Herbs,$1.97,4/4/2023,72
+521,Star Fruit,$7.45,12/26/2022,50
+522,Hot Choc Vending,$0.62,5/3/2023,37
+523,Tomato - Green,$6.50,1/8/2023,15
+524,Whmis Spray Bottle Graduated,$4.70,4/6/2023,51
+525,"Nut - Almond, Blanched, Sliced",$9.75,12/31/2022,24
+526,Apron,$1.44,10/23/2022,53
+527,Bacardi Limon,$4.49,12/30/2022,51
+528,Halibut - Steaks,$5.40,5/9/2023,14
+529,Bread - Raisin,$8.19,2/20/2023,76
+530,Tea - Apple Green Tea,$5.02,2/28/2023,50
+531,Squash - Sunburst,$1.30,1/27/2023,91
+532,Potato - Sweet,$0.90,8/17/2022,78
+533,Sesame Seed,$7.42,3/28/2023,31
+534,Eggplant Oriental,$9.20,9/9/2022,84
+535,Muffin Puck Ww Carrot,$4.11,6/7/2023,56
+536,Miso Paste White,$4.26,3/18/2023,58
+537,Crackers - Melba Toast,$6.79,3/22/2023,59
+538,Hand Towel,$4.14,1/4/2023,17
+539,"Potatoes - Yukon Gold, 80 Ct",$7.89,9/23/2022,56
+540,Red Pepper Paste,$4.46,6/27/2023,22
+541,Rabbit - Frozen,$6.52,11/27/2022,64
+542,Pork - Bacon Cooked Slcd,$5.72,10/17/2022,8
+543,"Cod - Salted, Boneless",$2.10,1/8/2023,97
+544,Loquat,$5.56,5/28/2023,24
+545,Evaporated Milk - Skim,$0.73,6/14/2023,65
+546,Higashimaru Usukuchi Soy,$1.49,4/12/2023,47
+547,Pike - Frozen Fillet,$5.14,9/17/2022,55
+548,Pickles - Gherkins,$0.67,2/27/2023,26
+549,Broom - Push,$4.74,9/9/2022,37
+550,Pepper - Sorrano,$6.74,5/10/2023,67
+551,"Iced Tea - Lemon, 340ml",$2.43,2/3/2023,12
+552,"Coke - Diet, 355 Ml",$3.68,2/25/2023,12
+553,"Vodka - Lemon, Absolut",$7.56,7/7/2023,86
+554,"Pasta - Cannelloni, Sheets, Fresh",$4.40,2/3/2023,69
+555,Wine - Crozes Hermitage E.,$4.24,7/13/2023,65
+556,Beef - Short Ribs,$0.79,11/4/2022,16
+557,Beer - Original Organic Lager,$2.35,8/23/2022,13
+558,Wine - Magnotta - Bel Paese White,$0.24,9/27/2022,87
+559,Cheese Cloth,$2.56,8/28/2022,29
+560,Crush - Cream Soda,$5.34,12/17/2022,16
+561,"Tortillas - Flour, 10",$4.14,5/17/2023,6
+562,Table Cloth 72x144 White,$6.23,12/24/2022,17
+563,"Shrimp - Baby, Cold Water",$3.47,12/25/2022,45
+564,Spinach - Packaged,$1.38,7/22/2023,72
+565,Salad Dressing,$5.21,3/4/2023,91
+566,Cheese - Colby,$5.78,7/13/2023,39
+567,Wine - Magnotta - Belpaese,$1.35,7/7/2023,55
+568,Coriander - Seed,$0.62,5/5/2023,22
+569,Squash - Butternut,$7.63,6/10/2023,33
+570,Appetizer - Smoked Salmon / Dill,$8.94,6/26/2023,3
+571,Veal - Inside,$5.82,5/13/2023,65
+572,Wine - Sauvignon Blanc,$1.42,1/6/2023,2
+573,"Coke - Classic, 355 Ml",$7.55,4/22/2023,59
+574,Cheese - Grie Des Champ,$0.35,10/5/2022,17
+575,"Rosemary - Primerba, Paste",$9.63,10/3/2022,67
+576,Marjoram - Fresh,$8.89,10/24/2022,30
+577,"Lobster - Baby, Boiled",$0.17,7/6/2023,62
+578,Beef - Sushi Flat Iron Steak,$0.70,10/14/2022,92
+579,Cloves - Ground,$3.59,2/14/2023,53
+580,"Bread - Roll, Canadian Dinner",$4.90,8/13/2023,80
+581,"Liqueur Banana, Ramazzotti",$7.10,4/27/2023,28
+582,Cheese - Brie Roitelet,$8.26,4/16/2023,38
+583,Beans - French,$4.59,5/28/2023,56
+584,"Jam - Strawberry, 20 Ml Jar",$7.75,9/18/2022,87
+585,Filling - Mince Meat,$5.21,12/28/2022,87
+586,"Pepper - Paprika, Spanish",$4.18,11/5/2022,83
+587,Beef Dry Aged Tenderloin Aaa,$3.60,12/26/2022,83
+588,Muffin Batt - Ban Dream Zero,$8.20,3/13/2023,90
+589,Strawberries,$5.41,1/21/2023,81
+590,"Crab - Dungeness, Whole, live",$8.22,3/4/2023,81
+591,Ecolab - Mikroklene 4/4 L,$1.94,2/14/2023,54
+592,Tamarind Paste,$0.38,7/4/2023,61
+593,Sauce - Thousand Island,$9.63,9/1/2022,59
+594,Sobe - Lizard Fuel,$0.24,6/1/2023,53
+595,Squash - Butternut,$6.02,1/26/2023,85
+596,"Salmon - Atlantic, Fresh, Whole",$0.13,1/10/2023,3
+597,Lamb - Sausage Casings,$5.09,8/24/2022,51
+598,Sauce - Salsa,$8.56,3/27/2023,6
+599,Squid - U 5,$6.70,4/21/2023,16
+600,Thyme - Fresh,$3.38,5/10/2023,14
+601,"Sauce - Gravy, Au Jus, Mix",$7.54,8/23/2022,13
+602,Soup - Campbells - Tomato,$6.68,3/4/2023,73
+603,Apple - Custard,$8.52,10/8/2022,2
+604,"Wine - Magnotta, White",$5.74,2/27/2023,85
+605,Bread - Focaccia Quarter,$7.23,8/24/2022,93
+606,Straw - Regular,$8.79,5/3/2023,83
+607,Sauce - Vodka Blush,$0.60,12/15/2022,31
+608,Pie Shells 10,$8.64,4/25/2023,44
+609,Maple Syrup,$0.06,1/1/2023,84
+610,Chicken - Tenderloin,$1.19,10/3/2022,54
+611,Kolrabi,$1.82,3/23/2023,38
+612,Nori Sea Weed,$5.98,10/3/2022,71
+613,Oil - Shortening - All - Purpose,$3.49,11/18/2022,32
+614,"Oranges - Navel, 72",$6.35,3/9/2023,77
+615,Parasol Pick Stir Stick,$2.90,12/18/2022,47
+616,Venison - Liver,$5.83,2/13/2023,27
+617,Bagel - Plain,$2.41,7/18/2023,91
+618,Barley - Pearl,$5.98,5/8/2023,53
+619,"Beer - Alexander Kieths, Pale Ale",$9.23,9/20/2022,15
+620,Shrimp - 100 / 200 Cold Water,$9.97,9/28/2022,82
+621,"Sauce - Black Current, Dry Mix",$0.60,9/16/2022,20
+622,"Mushroom - Enoki, Dry",$3.25,6/21/2023,94
+623,Wine - Barolo Fontanafredda,$4.33,2/12/2023,96
+624,"Chicken - Wings, Tip Off",$4.48,9/15/2022,98
+625,"Soup - Knorr, Country Bean",$7.31,3/29/2023,72
+626,Buffalo - Tenderloin,$8.49,3/6/2023,58
+627,Tea - Jasmin Green,$3.96,6/8/2023,10
+628,Sardines,$3.41,1/5/2023,82
+629,Puree - Strawberry,$6.81,4/30/2023,95
+630,Garam Marsala,$7.41,2/23/2023,49
+631,Pastry - Lemon Danish - Mini,$1.13,12/1/2022,7
+632,"Cherries - Bing, Canned",$7.85,3/6/2023,37
+633,Pastry - Baked Scones - Mini,$5.83,11/3/2022,34
+634,Beans - Kidney White,$4.98,9/23/2022,24
+635,"Pepper - Paprika, Spanish",$0.51,7/27/2023,70
+636,"Wine - White, Concha Y Toro",$1.73,7/18/2023,25
+637,Bacon Strip Precooked,$10.00,10/23/2022,80
+638,Sauce - Marinara,$0.31,12/10/2022,41
+639,"Shrimp - Baby, Cold Water",$9.50,1/3/2023,54
+640,Cream Of Tartar,$6.33,3/30/2023,50
+641,Bread - Onion Focaccia,$4.62,11/21/2022,52
+642,Lettuce - California Mix,$7.24,5/4/2023,46
+643,Silicone Parch. 16.3x24.3,$0.81,9/24/2022,81
+644,Chocolate Bar - Reese Pieces,$7.36,4/30/2023,96
+645,Wine - Two Oceans Cabernet,$9.34,8/1/2023,33
+646,Papayas,$4.46,1/2/2023,33
+647,Lobster - Canned Premium,$5.11,9/7/2022,64
+648,Flower - Daisies,$6.59,12/12/2022,6
+649,"Tomatoes - Diced, Canned",$3.14,10/3/2022,39
+650,"Beef - Ox Tongue, Pickled",$4.24,7/15/2023,10
+651,"Cheese - Brie, Cups 125g",$8.99,8/23/2022,80
+652,Jameson - Irish Whiskey,$5.22,8/23/2022,7
+653,Beef - Shank,$0.78,1/23/2023,73
+654,"Oil - Food, Lacquer Spray",$8.73,10/12/2022,80
+655,Lid - 0090 Clear,$4.98,1/3/2023,89
+656,Tomato Paste,$1.39,8/10/2023,39
+657,Raspberries - Fresh,$6.33,7/17/2023,34
+658,Yogurt - Plain,$2.51,8/23/2022,15
+659,Salmon Steak - Cohoe 6 Oz,$6.35,9/5/2022,29
+660,Garam Masala Powder,$6.46,12/10/2022,8
+661,Puree - Raspberry,$5.67,12/1/2022,82
+662,Salmon - Sockeye Raw,$3.88,7/11/2023,36
+663,Lemon Pepper,$4.46,5/8/2023,32
+664,"Pasta - Elbows, Macaroni, Dry",$4.84,1/24/2023,57
+665,Coffee - Cafe Moreno,$9.18,2/9/2023,34
+666,Rice - Aborio,$7.39,1/1/2023,1
+667,Versatainer Nc - 9388,$5.85,8/16/2023,45
+668,Dawn Professionl Pot And Pan,$0.04,12/6/2022,55
+669,Sauce - Demi Glace,$8.93,6/30/2023,2
+670,"Salmon - Atlantic, No Skin",$3.84,7/8/2023,71
+671,Hagen Daza - Dk Choocolate,$3.24,3/31/2023,33
+672,Cheese - Gouda,$0.44,10/1/2022,22
+673,Island Oasis - Magarita Mix,$7.14,12/8/2022,25
+674,Anchovy Paste - 56 G Tube,$6.82,2/26/2023,85
+675,Coffee - Egg Nog Capuccino,$8.93,6/6/2023,80
+676,Truffle Shells - Semi - Sweet,$6.97,8/14/2023,83
+677,Sauce - Mint,$2.49,3/19/2023,38
+678,Wine - Penfolds Koonuga Hill,$4.11,1/7/2023,53
+679,Shallots,$5.48,5/7/2023,73
+680,Wine - Mondavi Coastal Private,$7.23,7/20/2023,97
+681,Amaretto,$1.35,3/31/2023,4
+682,Beer - Guiness,$1.21,12/13/2022,32
+683,French Pastry - Mini Chocolate,$0.05,6/8/2023,62
+684,Fond - Neutral,$8.61,8/25/2022,19
+685,Cookies - Englishbay Oatmeal,$8.54,4/17/2023,73
+686,Appetizer - Southwestern,$1.41,3/16/2023,33
+687,"Tart Shells - Sweet, 4",$3.50,1/16/2023,25
+688,Beer - Original Organic Lager,$3.91,5/20/2023,30
+689,Pop - Club Soda Can,$6.07,9/18/2022,4
+690,"Bread - White, Sliced",$9.18,4/21/2023,28
+691,Milk - Skim,$2.12,11/12/2022,95
+692,Lettuce - Spring Mix,$2.32,5/30/2023,42
+693,Lettuce - Escarole,$6.59,4/21/2023,6
+694,Wheat - Soft Kernal Of Wheat,$9.90,6/21/2023,12
+695,Snapple - Mango Maddness,$7.62,9/14/2022,96
+696,Appetizer - Smoked Salmon / Dill,$1.50,8/27/2022,80
+697,Bread - Frozen Basket Variety,$5.30,3/2/2023,25
+698,Tuna - Loin,$4.48,10/5/2022,63
+699,Raisin - Dark,$9.07,1/3/2023,8
+700,Island Oasis - Lemonade,$2.10,11/19/2022,29
+701,Muffin - Carrot Individual Wrap,$1.84,11/25/2022,33
+702,Cream Of Tartar,$8.01,10/15/2022,28
+703,Beer - True North Lager,$2.04,6/17/2023,50
+704,Sunflower Seed Raw,$5.95,7/16/2023,17
+705,Versatainer Nc - 9388,$3.40,5/3/2023,85
+706,"Bar Mix - Pina Colada, 355 Ml",$1.90,7/13/2023,91
+707,Muskox - French Rack,$0.75,12/10/2022,16
+708,Pastry - Raisin Muffin - Mini,$8.04,9/14/2022,95
+709,Sproutsmustard Cress,$2.91,10/25/2022,1
+710,Shrimp - Black Tiger 13/15,$0.74,10/8/2022,51
+711,Cake Slab,$6.73,11/26/2022,45
+712,Soup Campbells Split Pea And Ham,$6.44,1/15/2023,66
+713,Sauce - Thousand Island,$1.17,12/22/2022,13
+714,Flour Pastry Super Fine,$2.81,12/21/2022,80
+715,Garbage Bag - Clear,$7.26,5/25/2023,45
+716,Ice Cream - Super Sandwich,$4.62,6/27/2023,61
+717,Pork - European Side Bacon,$3.90,6/7/2023,24
+718,Chicken Thigh - Bone Out,$7.44,6/13/2023,53
+719,Beer - Corona,$4.06,6/19/2023,68
+720,"Juice - Tomato, 48 Oz",$7.42,12/4/2022,92
+721,Cocoa Butter,$4.56,11/22/2022,92
+722,Wine - Malbec Trapiche Reserve,$9.85,4/26/2023,89
+723,Muffin Batt - Blueberry Passion,$9.80,11/7/2022,90
+724,Food Colouring - Red,$8.16,11/11/2022,40
+725,Apricots Fresh,$4.45,8/18/2022,90
+726,Pork - Inside,$4.16,7/25/2023,98
+727,Beef - Tenderloin Tails,$1.84,3/11/2023,6
+728,"Sauce - Black Current, Dry Mix",$3.63,6/5/2023,39
+729,Versatainer Nc - 8288,$2.80,4/17/2023,75
+730,Vacuum Bags 12x16,$7.11,5/29/2023,68
+731,Pork - Belly Fresh,$2.69,3/7/2023,71
+732,Soupcontfoam16oz 116con,$2.73,12/21/2022,55
+733,Clam - Cherrystone,$3.94,1/31/2023,4
+734,Pails With Lids,$8.05,4/26/2023,19
+735,Capers - Ox Eye Daisy,$0.73,11/3/2022,10
+736,Beans - Butter Lrg Lima,$4.48,7/16/2023,56
+737,"Coffee - Colombian, Portioned",$7.51,12/27/2022,44
+738,"Flour - Corn, Fine",$0.47,1/9/2023,58
+739,Wine - Alsace Gewurztraminer,$9.64,1/7/2023,32
+740,Pasta - Ravioli,$1.10,1/8/2023,97
+741,"Coconut - Shredded, Unsweet",$7.90,3/3/2023,10
+742,"Bread - Roll, Canadian Dinner",$2.75,12/21/2022,85
+743,Longos - Penne With Pesto,$5.81,10/22/2022,66
+744,Heavy Duty Dust Pan,$0.67,9/19/2022,26
+745,Beef Ground Medium,$3.69,3/16/2023,69
+746,Bar Mix - Lime,$4.92,4/19/2023,40
+747,Ice Cream Bar - Drumstick,$6.52,2/6/2023,41
+748,Wine - Masi Valpolocell,$3.57,8/27/2022,2
+749,Wine - Casillero Deldiablo,$9.81,11/6/2022,54
+750,Table Cloth 62x120 White,$5.30,3/29/2023,66
+751,Cream - 10%,$9.62,8/11/2023,34
+752,Bread - Italian Corn Meal Poly,$4.70,6/26/2023,60
+753,"Bread - Crumbs, Bulk",$3.86,6/17/2023,90
+754,Cheese - Blue,$5.42,8/7/2023,49
+755,Container Clear 8 Oz,$7.47,2/15/2023,29
+756,Crackers - Soda / Saltins,$8.03,7/2/2023,40
+757,Bacon Strip Precooked,$9.45,6/18/2023,22
+758,Tea - Camomele,$9.96,5/17/2023,29
+759,Tomatoes Tear Drop,$3.94,5/30/2023,58
+760,Whmis Spray Bottle Graduated,$4.85,10/25/2022,74
+761,Shrimp - Prawn,$4.69,3/30/2023,16
+762,Clam - Cherrystone,$0.10,11/19/2022,99
+763,Chicken - Bones,$7.15,3/17/2023,85
+764,Cookie Dough - Chunky,$7.25,11/24/2022,6
+765,Tea - Green,$6.70,1/20/2023,34
+766,Lettuce - Escarole,$3.39,9/26/2022,18
+767,"Soup - Beef, Base Mix",$6.44,10/22/2022,58
+768,Lobster - Canned Premium,$7.10,11/4/2022,25
+769,"Crab - Dungeness, Whole, live",$5.08,7/27/2023,80
+770,Butter Balls Salted,$0.74,8/17/2022,66
+771,"Tea - Darjeeling, Azzura",$5.43,7/17/2023,33
+772,Sambuca - Opal Nera,$9.77,5/5/2023,72
+773,Island Oasis - Cappucino Mix,$9.93,6/26/2023,29
+774,Daikon Radish,$5.69,9/25/2022,92
+775,Pepper - Chilli Seeds Mild,$1.67,4/24/2023,47
+776,"Beans - Navy, Dry",$4.01,4/11/2023,1
+777,Cheese - Le Cheve Noir,$1.73,3/14/2023,24
+778,"Liners - Banana, Paper",$5.03,1/11/2023,84
+779,Toothpick Frilled,$7.86,2/5/2023,56
+780,Potatoes - Peeled,$5.85,7/3/2023,42
+781,Sauce - Rosee,$0.12,1/5/2023,64
+782,Pastry - Banana Tea Loaf,$5.96,4/14/2023,94
+783,Juice - Ocean Spray Cranberry,$0.48,7/3/2023,64
+784,Soupcontfoam16oz 116con,$2.39,7/14/2023,67
+785,"Oil - Truffle, White",$6.49,6/8/2023,17
+786,Pears - Bosc,$9.68,5/9/2023,8
+787,Parsnip,$6.72,1/3/2023,38
+788,"Beef - Bones, Cut - Up",$3.41,10/14/2022,26
+789,"Beef - Ox Tongue, Pickled",$7.70,8/19/2022,99
+790,"Juice - Grape, White",$1.28,1/26/2023,22
+791,Tomatoes Tear Drop,$6.78,1/13/2023,64
+792,Soup - Campbells Beef Strogonoff,$8.02,4/21/2023,99
+793,"Soup - Knorr, Chicken Gumbo",$2.40,1/14/2023,17
+794,Yoghurt Tubes,$0.66,6/22/2023,66
+795,Boogies,$3.67,4/21/2023,66
+796,Soupcontfoam16oz 116con,$6.41,12/29/2022,46
+797,Bagelers - Cinn / Brown,$7.39,10/24/2022,23
+798,Rice - Wild,$3.30,6/4/2023,29
+799,Grapes - Black,$9.82,1/26/2023,33
+800,Sobe - Orange Carrot,$4.43,6/26/2023,31
+801,Quail - Jumbo,$3.72,1/18/2023,56
+802,Chef Hat 20cm,$6.82,1/18/2023,87
+803,Soup - Campbells Chili Veg,$1.50,11/7/2022,25
+804,Crackers - Soda / Saltins,$6.21,11/19/2022,57
+805,"Cherries - Maraschino,jar",$7.20,10/14/2022,99
+806,External Supplier,$4.94,12/18/2022,49
+807,Towel Multifold,$1.98,1/20/2023,9
+808,Long Island Ice Tea,$4.50,1/21/2023,60
+809,Chocolate - Dark,$7.28,9/2/2022,45
+810,Wine - Rioja Campo Viejo,$2.09,10/14/2022,93
+811,Cake - Cake Sheet Macaroon,$7.46,1/1/2023,70
+812,"Sugar - Brown, Individual",$2.04,11/29/2022,44
+813,Beans - Butter Lrg Lima,$1.58,7/1/2023,29
+814,Sugar - Individual Portions,$4.52,1/10/2023,6
+815,Muffin Batt - Carrot Spice,$6.29,7/19/2023,8
+816,Sprouts - Brussel,$3.50,7/27/2023,94
+817,Turnip - White,$7.89,8/13/2023,39
+818,Glaze - Clear,$4.09,4/11/2023,69
+819,"Wine - Red, Black Opal Shiraz",$2.80,4/23/2023,96
+820,Urban Zen Drinks,$9.30,10/22/2022,48
+821,Tomatoes - Orange,$0.15,5/5/2023,45
+822,Bread - Flat Bread,$6.38,9/13/2022,51
+823,"Wine - Red, Gamay Noir",$8.40,7/27/2023,9
+824,"Doilies - 8, Paper",$9.39,10/9/2022,80
+825,"Cheese - Cheddar, Old White",$3.28,6/20/2023,69
+826,"Bread - Pullman, Sliced",$7.37,2/26/2023,2
+827,"Artichoke - Hearts, Canned",$2.98,11/19/2022,36
+828,Wine - Masi Valpolocell,$1.06,10/26/2022,50
+829,Bagel - Everything Presliced,$0.99,3/1/2023,93
+830,Sausage - Andouille,$3.53,11/18/2022,77
+831,Bar - Sweet And Salty Chocolate,$0.49,11/7/2022,73
+832,"Sauce - Bernaise, Mix",$0.47,2/16/2023,85
+833,Soap - Hand Soap,$5.80,4/3/2023,95
+834,Pastry - Baked Cinnamon Stick,$2.49,3/27/2023,11
+835,Jolt Cola,$6.80,8/25/2022,27
+836,Appetizer - Chicken Satay,$7.72,5/5/2023,58
+837,"Vodka - Lemon, Absolut",$1.18,4/10/2023,97
+838,"Pasta - Fettuccine, Dry",$5.92,10/2/2022,48
+839,Flour - Strong,$0.76,7/10/2023,98
+840,Snapple Lemon Tea,$9.65,4/6/2023,91
+841,Juice - Ocean Spray Cranberry,$4.24,1/28/2023,79
+842,Skewers - Bamboo,$2.84,7/2/2023,89
+843,Salami - Genova,$5.58,3/16/2023,56
+844,"Tray - Foam, Square 4 - S",$5.95,8/24/2022,97
+845,Bag Clear 10 Lb,$0.41,6/12/2023,61
+846,Sauce - Ranch Dressing,$9.65,9/30/2022,87
+847,Creme De Menth - White,$3.23,12/31/2022,99
+848,Basil - Seedlings Cookstown,$7.75,12/6/2022,54
+849,Wine - Cousino Macul Antiguas,$5.79,12/6/2022,21
+850,Onions - Red Pearl,$2.50,8/19/2022,13
+851,Sauce - Fish 25 Ozf Bottle,$5.24,3/16/2023,87
+852,Lotus Leaves,$2.36,5/12/2023,62
+853,Dried Figs,$0.52,4/30/2023,71
+854,Milk - Buttermilk,$8.97,12/23/2022,84
+855,Lime Cordial - Roses,$4.30,11/14/2022,65
+856,Oranges,$7.03,6/2/2023,68
+857,Basil - Pesto Sauce,$9.60,2/23/2023,18
+858,Ecolab Silver Fusion,$6.85,4/24/2023,31
+859,"Pork - Loin, Bone - In",$7.79,5/25/2023,66
+860,Puree - Blackcurrant,$6.02,5/24/2023,11
+861,The Pop Shoppe - Black Cherry,$1.19,3/14/2023,54
+862,Wine - Rioja Campo Viejo,$5.99,7/29/2023,69
+863,Sausage - Andouille,$0.07,6/10/2023,32
+864,Sprouts - Baby Pea Tendrils,$8.50,8/1/2023,53
+865,Greens Mustard,$1.89,5/20/2023,4
+866,Flour - Fast / Rapid,$6.22,6/18/2023,35
+867,Pizza Pizza Dough,$3.47,4/12/2023,97
+868,"Wine - White, Lindemans Bin 95",$5.75,12/8/2022,64
+869,Wine - Piper Heidsieck Brut,$2.58,1/25/2023,32
+870,Lid - 16 Oz And 32 Oz,$3.66,7/7/2023,45
+871,Beef Ground Medium,$7.16,11/21/2022,8
+872,Tarts Assorted,$3.90,12/20/2022,100
+873,Allspice - Jamaican,$3.26,12/12/2022,37
+874,Apple - Granny Smith,$1.46,8/30/2022,38
+875,"Onions - Dried, Chopped",$2.15,2/7/2023,52
+876,Bread Ww Cluster,$4.63,3/9/2023,23
+877,Tuna - Loin,$8.64,7/14/2023,93
+878,Pants Custom Dry Clean,$9.84,9/22/2022,18
+879,Lettuce - Curly Endive,$2.52,8/21/2022,7
+880,Arizona - Plum Green Tea,$9.71,5/2/2023,60
+881,"Cake Circle, Paprus",$7.33,6/16/2023,64
+882,Pepper - Pablano,$3.67,4/12/2023,41
+883,Sugar - Individual Portions,$4.66,10/4/2022,73
+884,Fennel - Seeds,$9.50,7/29/2023,1
+885,"Wine - Red, Cabernet Sauvignon",$7.14,4/9/2023,94
+886,"Hickory Smoke, Liquid",$4.62,8/2/2023,90
+887,Beer - Moosehead,$9.07,4/28/2023,55
+888,"Pepper - Julienne, Frozen",$1.21,2/28/2023,77
+889,"Seedlings - Mix, Organic",$7.61,10/17/2022,95
+890,Soup - Tomato Mush. Florentine,$3.61,10/19/2022,99
+891,Appetizer - Tarragon Chicken,$8.73,8/24/2022,41
+892,"Chilli Paste, Ginger Garlic",$5.33,1/26/2023,45
+893,Cheese Cloth No 60,$5.54,3/22/2023,46
+894,"Stock - Beef, Brown",$1.51,4/19/2023,64
+895,Ice Cream - Life Savers,$1.63,10/14/2022,12
+896,Lamb - Bones,$5.84,6/30/2023,58
+897,Mayonnaise,$8.13,5/5/2023,34
+898,Tumeric,$4.29,4/10/2023,72
+899,Sambuca - Ramazzotti,$8.91,10/8/2022,36
+900,"Soup - Knorr, French Onion",$6.54,5/19/2023,6
+901,Salmon Steak - Cohoe 8 Oz,$9.49,9/22/2022,52
+902,Flour - Semolina,$9.39,1/5/2023,76
+903,Papayas,$9.66,12/3/2022,85
+904,"Chicken - Thigh, Bone In",$6.95,10/18/2022,82
+905,Sping Loaded Cup Dispenser,$9.70,5/4/2023,57
+906,Coffee - Hazelnut Cream,$8.97,7/21/2023,19
+907,Plastic Wrap,$3.68,2/26/2023,80
+908,Parsley - Dried,$7.52,8/27/2022,19
+909,"Pork - Ham, Virginia",$3.50,3/8/2023,56
+910,"Butter - Salted, Micro",$4.39,9/7/2022,21
+911,"Stock - Beef, Brown",$4.98,9/28/2022,97
+912,Eggwhite Frozen,$2.65,3/11/2023,25
+913,Potatoes - Peeled,$2.52,3/2/2023,13
+914,Yeast Dry - Fleischman,$4.72,8/28/2022,79
+915,Rappini - Andy Boy,$1.32,6/13/2023,89
+916,Wine - Rhine Riesling Wolf Blass,$7.57,1/5/2023,19
+917,Sword Pick Asst,$8.53,1/21/2023,35
+918,Fork - Plastic,$8.04,10/2/2022,16
+919,Pastry - Lemon Danish - Mini,$2.92,9/27/2022,83
+920,Paper - Brown Paper Mini Cups,$9.41,2/9/2023,31
+921,Coriander - Seed,$5.85,3/17/2023,7
+922,Wine - Trimbach Pinot Blanc,$5.96,7/29/2023,74
+923,Madeira,$3.14,8/13/2023,55
+924,Tequila Rose Cream Liquor,$2.91,2/16/2023,75
+925,Bread - Assorted Rolls,$4.76,12/19/2022,97
+926,Capicola - Hot,$8.07,11/12/2022,77
+927,Muffin Batt - Carrot Spice,$3.04,12/11/2022,83
+928,Beer - Moosehead,$5.72,10/23/2022,100
+929,Tea - Green,$7.79,6/21/2023,7
+930,"Leeks - Baby, White",$1.29,1/8/2023,62
+931,Table Cloth 72x144 White,$0.96,5/6/2023,83
+932,"Nestea - Ice Tea, Diet",$4.12,7/26/2023,98
+933,Spaghetti Squash,$4.61,2/23/2023,4
+934,Quail - Jumbo Boneless,$6.76,5/4/2023,75
+935,"Soup - Beef, Base Mix",$0.60,8/12/2023,59
+936,Towel - Roll White,$9.35,3/13/2023,45
+937,Spring Roll Wrappers,$9.25,4/26/2023,4
+938,Aspic - Amber,$7.24,5/2/2023,15
+939,Propel Sport Drink,$9.19,7/30/2023,45
+940,Ham - Virginia,$5.86,11/14/2022,4
+941,Puree - Kiwi,$8.66,2/3/2023,99
+942,Bread Roll Foccacia,$8.88,10/2/2022,22
+943,Cauliflower,$9.99,4/16/2023,53
+944,Pineapple - Regular,$5.20,7/12/2023,62
+945,Icecream - Dstk Cml And Fdg,$1.38,7/21/2023,52
+946,Beef - Top Butt Aaa,$1.17,6/10/2023,51
+947,Oil - Coconut,$4.25,3/23/2023,77
+948,Mayonnaise,$9.38,1/2/2023,36
+949,"Shrimp - 21/25, Peel And Deviened",$9.19,9/7/2022,90
+950,Beer - Muskoka Cream Ale,$7.55,8/6/2023,50
+951,Dried Peach,$2.22,3/7/2023,61
+952,Tarragon - Fresh,$0.47,8/1/2023,88
+953,White Fish - Filets,$0.31,1/20/2023,60
+954,Campari,$7.72,11/21/2022,31
+955,Wine - Casillero Del Diablo,$1.93,10/22/2022,20
+956,Wine - Casablanca Valley,$1.85,5/29/2023,48
+957,Honey - Liquid,$8.16,11/8/2022,40
+958,Pork - Suckling Pig,$0.35,9/14/2022,36
+959,Pecan Raisin - Tarts,$3.72,4/29/2023,82
+960,Cabbage - Red,$7.67,12/10/2022,60
+961,"7up Diet, 355 Ml",$4.28,1/4/2023,5
+962,Bread - Multigrain,$2.03,5/9/2023,41
+963,Bread - Raisin Walnut Pull,$4.86,5/28/2023,19
+964,Chinese Lemon Pork,$7.04,3/23/2023,12
+965,Chocolate - Dark Callets,$9.97,11/4/2022,56
+966,Wine - Fino Tio Pepe Gonzalez,$7.18,5/21/2023,23
+967,Squeeze Bottle,$0.41,4/13/2023,61
+968,Pork - Kidney,$3.54,12/5/2022,4
+969,Chicken - Livers,$4.67,11/11/2022,67
+970,Octopus,$2.70,11/21/2022,92
+971,Chambord Royal,$0.82,11/25/2022,44
+972,"Pasta - Orzo, Dry",$7.50,7/31/2023,41
+973,Bread - White Epi Baguette,$8.54,1/3/2023,24
+974,Wine - Wyndham Estate Bin 777,$2.17,6/28/2023,50
+975,Pineapple - Golden,$6.35,7/20/2023,50
+976,Fondant - Icing,$8.60,4/27/2023,46
+977,"Nut - Pine Nuts, Whole",$4.15,5/25/2023,11
+978,Fondant - Icing,$6.79,12/22/2022,11
+979,Raisin - Dark,$4.02,9/9/2022,57
+980,Beer - Original Organic Lager,$5.43,2/8/2023,51
+981,Table Cloth 54x72 White,$4.37,10/19/2022,39
+982,"Flour - Bran, Red",$1.09,2/13/2023,22
+983,Beef - Inside Round,$1.43,2/24/2023,14
+984,Beef - Diced,$5.33,12/30/2022,70
+985,"Nut - Almond, Blanched, Ground",$4.56,8/13/2023,82
+986,Kellogs All Bran Bars,$1.54,8/3/2023,57
+987,Cheese - Goat With Herbs,$2.21,3/29/2023,3
+988,Lid Coffee Cup 8oz Blk,$4.34,4/17/2023,30
+989,Pastry - Butterscotch Baked,$2.39,12/23/2022,14
+990,Tea - Apple Green Tea,$9.67,10/15/2022,8
+991,"Lemonade - Kiwi, 591 Ml",$5.42,2/13/2023,28
+992,Anisette - Mcguiness,$4.67,8/8/2023,55
+993,"Pepper - Paprika, Spanish",$9.70,12/11/2022,11
+994,"Beef - Rib Roast, Capless",$6.80,8/12/2023,5
+995,Chicken - White Meat With Tender,$4.28,4/17/2023,25
+996,"Nut - Cashews, Whole, Raw",$3.67,3/15/2023,13
+997,Sage - Ground,$1.68,5/28/2023,27
+998,Container - Hngd Cll Blk 7x7x3,$0.67,9/13/2022,40
+999,Muffin Mix - Corn Harvest,$0.58,1/1/2023,49
+1000,Fondant - Icing,$4.14,5/17/2023,55
