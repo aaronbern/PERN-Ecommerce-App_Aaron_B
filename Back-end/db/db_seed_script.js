@@ -2,6 +2,7 @@ const fs = require('fs');
 const csv = require('csv-parser');
 const pool = require('./db'); 
 
+
 const seedDatabase = async () => {
   try {
     const products = [];
@@ -29,7 +30,7 @@ const seedDatabase = async () => {
         // Insert each product into the database
         for (let product of products) {
           await pool.query(
-            'INSERT INTO products (name, brand, expiration_date, price, quantity, weight, country_of_origin, ingredients, allergens, nutrition_facts) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)',
+            'INSERT INTO products (product_name, brand, expiration_date, price, quantity, weight, country_of_origin, ingredients, allergens, nutrition_facts) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)',
             [product.name, product.brand, product.expiration_date, product.price, product.quantity, product.weight, product.country_of_origin, product.ingredients, product.allergens, product.nutrition_facts]
           );
         }

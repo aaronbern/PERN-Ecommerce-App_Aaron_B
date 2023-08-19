@@ -20,9 +20,9 @@ swaggerDefinition: {
     title: "E-commerce API",
     description: "E-commerce API Information",
     contact: {
-        name: "Developer Name"
+        name: "Aaron Bernard"
     },
-    servers: ["http://localhost:YOUR_PORT_NUMBER"]
+    servers: ["http://localhost:3000"]
     }
 },
 // ['./routes/*.js']
