@@ -36,7 +36,5 @@ I've chosen to begin with the backend, laying a robust foundation. With clear da
   
 - [ ] User Authentication System: Implementing secure login mechanisms to safeguard user data.
 
-... (Continue listing other major milestones)
-
 ## **Collaboration:**
 Open to collaboration! Let's enhance this platform's potential together. If interested, please drop me a message.
