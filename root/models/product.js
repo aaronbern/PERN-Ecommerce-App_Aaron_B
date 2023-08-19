@@ -28,11 +28,43 @@ const getProductById = async (productId) => {
     return result.rows[0];
 };
 
-// ... other product-related functions as needed (e.g., updateProduct, deleteProduct)
+// Function to update a product
+const updateProduct = async (productId, productData) => {
+    const query = `
+        UPDATE products
+        SET name = $1, price = $2, expiration_date = $3, quantity = $4
+        WHERE id = $5
+        RETURNING *;  // Return all fields of the updated product
+    `;
+    const values = [productData.name, productData.price, productData.expiration_date, productData.quantity, productId];
+
+    const result = await pool.query(query, values);
+    return result.rows[0];
+};
+
+// Function to delete a product
+const deleteProduct = async (productId) => {
+    const query = "DELETE FROM products WHERE id = $1 RETURNING *;";
+    const values = [productId];
+
+    const result = await pool.query(query, values);
+    return result.rows[0];
+};
+
+// Function to search products 
+const searchProducts = async (searchTerm) => {
+    const query = "SELECT * FROM products WHERE name ILIKE $1";  // ILIKE for case-insensitive search
+    const values = [`%${searchTerm}%`];  // '%' are wildcards for partial match
+
+    const result = await pool.query(query, values);
+    return result.rows;
+};
 
 module.exports = {
     addProduct,
     getAllProducts,
     getProductById,
-    // ... export other functions as needed
+    updateProduct,
+    deleteProduct,
+    searchProducts  
 };

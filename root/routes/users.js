@@ -2,6 +2,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const pool = require('../db/db');
 
+// Register user controller
 exports.registerUser = async (req, res) => {
     try {
         const { username, password } = req.body;
@@ -14,7 +15,8 @@ exports.registerUser = async (req, res) => {
         res.status(500).json({ error: err.message });
     }
 };
-exports.registerUser = registerUser;
+
+// Login user controller
 exports.loginUser = async (req, res) => {
     try {
         const { username, password } = req.body;
@@ -34,7 +36,7 @@ exports.loginUser = async (req, res) => {
         }
 
         // Generate JWT
-        const token = jwt.sign({ userId: user.id }, 'YOUR_SECRET_KEY', { expiresIn: '1h' });
+        const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
         res.status(200).json({ token });
     } catch (err) {

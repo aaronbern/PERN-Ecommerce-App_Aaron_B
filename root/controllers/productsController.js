@@ -37,3 +37,40 @@ exports.createProduct = async (req, res) => {
         res.status(500).json({ error: err.message });
     }
 };
+exports.updateProduct = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const { name, price, expiration_date, quantity } = req.body;
+
+        const result = await pool.query(
+            "UPDATE products SET name = $1, price = $2, expiration_date = $3, quantity = $4 WHERE id = $5 RETURNING *",
+            [name, price, expiration_date, quantity, id]
+        );
+
+        if (result.rows.length === 0) {
+            res.status(404).json({ message: "Product not found." });
+            return;
+        }
+
+        res.status(200).json(result.rows[0]);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+};
+exports.deleteProduct = async (req, res) => {
+    try {
+        const { id } = req.params;
+
+        const result = await pool.query("DELETE FROM products WHERE id = $1 RETURNING id", [id]);
+
+        if (result.rows.length === 0) {
+            res.status(404).json({ message: "Product not found." });
+            return;
+        }
+
+        res.status(200).json({ message: "Product deleted successfully." });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+};
+
