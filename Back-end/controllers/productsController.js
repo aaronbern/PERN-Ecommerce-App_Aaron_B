@@ -73,4 +73,17 @@ exports.deleteProduct = async (req, res) => {
         res.status(500).json({ error: err.message });
     }
 };
+exports.getAllProducts = async (req, res) => {
+    try {
+        const result = await pool.query("SELECT * FROM products");
 
+        if (result.rows.length === 0) {
+            res.status(404).json({ message: "No products found." });
+            return;
+        }
+
+        res.status(200).json(result.rows);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+};
