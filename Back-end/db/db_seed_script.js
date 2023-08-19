@@ -7,15 +7,20 @@ const seedDatabase = async () => {
     const products = [];
 
     // Parse CSV and populate the products array
-    fs.createReadStream('MOCK_DATA.csv')
+    fs.createReadStream('MOCK_DATA.csv') // Make sure the CSV file name is correct
       .pipe(csv())
       .on('data', (row) => {
         products.push({
-          id: row.id,
-          name: row.product_grocery,
-          price: parseFloat(row.price_grocery.replace('$', '')), // Remove $ and convert to float
+          name: row.product_name,
+          brand: row.brand,
           expiration_date: new Date(row.expiration_date),
+          price: parseFloat(row.price),
           quantity: parseInt(row.quantity),
+          weight: parseFloat(row.weight),
+          country_of_origin: row.country_of_origin,
+          ingredients: row.ingredients,
+          allergens: row.allergens,
+          nutrition_facts: row.nutrition_facts,
         });
       })
       .on('end', async () => {
@@ -24,8 +29,8 @@ const seedDatabase = async () => {
         // Insert each product into the database
         for (let product of products) {
           await pool.query(
-            'INSERT INTO products (id, name, price, expiration_date, quantity) VALUES ($1, $2, $3, $4, $5)',
-            [product.id, product.name, product.price, product.expiration_date, product.quantity]
+            'INSERT INTO products (name, brand, expiration_date, price, quantity, weight, country_of_origin, ingredients, allergens, nutrition_facts) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)',
+            [product.name, product.brand, product.expiration_date, product.price, product.quantity, product.weight, product.country_of_origin, product.ingredients, product.allergens, product.nutrition_facts]
           );
         }
 
