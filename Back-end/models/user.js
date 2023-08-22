@@ -1,6 +1,6 @@
 const pool = require('../db/db');
 
-const createUser = async (userData) => {
+const createUser = async (userData) =>  {
     const query = `
         INSERT INTO users (username, password) 
         VALUES ($1, $2) 
@@ -20,25 +20,25 @@ const getUserByUsername = async (username) => {
     return result.rows[0];  // Return the user details
 };
 
-const updateUserPassword = async (userId, newPassword) => {
+const updateUserPassword = async (username, newPassword) => {
     const query = `
         UPDATE users
         SET password = $1
-        WHERE id = $2
-        RETURNING id, username;  -- Return the updated user's id and username
+        WHERE username = $2
+        RETURNING id, username;
     `;
-    const values = [newPassword, userId];  // Ensure the new password is hashed before this step
+    const values = [newPassword, username];
 
     const result = await pool.query(query, values);
-    return result.rows[0];  // Return the updated user's details
+    return result.rows[0];
 };
 
-const deleteUser = async (userId) => {
-    const query = "DELETE FROM users WHERE id = $1 RETURNING *;";
-    const values = [userId];
+const deleteUser = async (username) => {
+    const query = "DELETE FROM users WHERE username = $1 RETURNING *;";
+    const values = [username];
 
     const result = await pool.query(query, values);
-    return result.rows[0];  // Return the deleted user's details (useful for confirmation)
+    return result.rows[0];
 };
 
 module.exports = {

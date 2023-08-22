@@ -20,7 +20,9 @@
     "jsonwebtoken": "^9.0.1",
     "pg": "^8.11.3",
     "pg-pool": "^3.6.1",
-    "semver": "^7.5.4"
+    "semver": "^7.5.4",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"

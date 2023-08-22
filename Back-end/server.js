@@ -7,6 +7,9 @@ const swaggerUi = require('swagger-ui-express');
 
 const productRoutes = require('./routes/products');
 const userRoutes = require('./routes/users');
+const taskController = require('./controllers/productsController');
+const userController = require('./controllers/userController');
+
 
 const app = express();
 // Middlewares
@@ -22,16 +25,23 @@ swaggerDefinition: {
     contact: {
         name: "Aaron Bernard"
     },
-    servers: ["http://localhost:3000"]
+    servers: ["http://localhost:5000"]
     }
 },
 // ['./routes/*.js']
 apis: ["./routes/*.js"]
 };
+
+app.get('/', (req, res) => {
+    res.json({ message: "Welcome to the PERN E-commerce API!" });
+});
+
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 // Routes
 app.use('/products', productRoutes);
+app.use('/users', userRoutes);
+
 
 // Error handler
 app.use((err, req, res, next) => {
@@ -39,10 +49,7 @@ app.use((err, req, res, next) => {
     res.status(500).send('Something went wrong!');
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
-});
-app.get('/', (req, res) => {
-    res.json({ message: "Welcome to the PERN E-commerce API!" });
 });

@@ -1,6 +1,6 @@
-const { createUser, getUserByUsername, deleteUser } = require('../models/user');
+const { createUser, getUserByUsername, updateUserPassword, deleteUser } = require('../models/user');
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');  // Import this if you're using JWT for user login
+const jwt = require('jsonwebtoken');
 
 exports.registerUser = async (req, res) => {
     try {
@@ -35,16 +35,23 @@ exports.loginUser = async (req, res) => {
     }
 };
 
-exports.getUserById = async (req, res) => {
+exports.updateUserPassword = async (req, res) => {
     try {
-        const { id } = req.params;
-        const user = await getUserById(id);
+        const { username } = req.params;
+        const { newPassword } = req.body;
 
-        if (user) {
-            res.status(200).json(user);
-        } else {
-            res.status(404).json({ message: 'User not found' });
+        if (!newPassword) {
+            return res.status(400).json({ message: 'New password is required.' });
         }
+
+        const hashedPassword = await bcrypt.hash(newPassword, 10);
+        const updatedUser = await updateUserPassword(username, hashedPassword);
+
+        if (!updatedUser) {
+            return res.status(404).json({ message: 'User not found.' });
+        }
+
+        res.status(200).json({ message: 'Password updated successfully', user: updatedUser });
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
@@ -52,14 +59,14 @@ exports.getUserById = async (req, res) => {
 
 exports.deleteUser = async (req, res) => {
     try {
-        const { id } = req.params;
-        const deletedUser = await deleteUser(id);
+        const { username } = req.params;
+        const deletedUser = await deleteUser(username);
 
-        if (deletedUser) {
-            res.status(200).json({ message: 'User deleted successfully', user: deletedUser });
-        } else {
-            res.status(404).json({ message: 'User not found' });
+        if (!deletedUser) {
+            return res.status(404).json({ message: 'User not found' });
         }
+
+        res.status(200).json({ message: 'User deleted successfully', user: deletedUser });
     } catch (err) {
         res.status(500).json({ error: err.message });
     }

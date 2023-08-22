@@ -15,21 +15,21 @@ router.get('/', productsController.getAllProducts);
 
 /**
  * @swagger
- * /products/{id}:
+ * /products/{product_name}:
  *   get:
- *     description: Retrieve a product by its ID
+ *     description: Retrieve a product by its name
  *     parameters:
  *     - in: path
- *       name: id
+ *       name: product_name
  *       schema:
- *         type: integer
+ *         type: string
  *       required: true
- *       description: ID of the product
+ *       description: Name of the product
  *     responses:
  *       200:
  *         description: Single product
  */
-router.get('/:id', productsController.getProductById);
+router.get('/:product_name', productsController.getProductByName);
 
 /**
  * @swagger
@@ -43,28 +43,31 @@ router.get('/:id', productsController.getProductById);
  *           schema:
  *             type: object
  *             properties:
- *               name:
+ *               product_name:
  *                 type: string
  *               price:
  *                 type: number
+ *               expiration_date:
+ *                 type: string
+ *                 format: date
  *     responses:
- *       200:
+ *       201:
  *         description: Created product
  */
 router.post('/', productsController.createProduct);
 
 /**
  * @swagger
- * /products/{id}:
+ * /products/{product_name}:
  *   put:
- *     description: Update a product by its ID
+ *     description: Update a product by its name
  *     parameters:
  *     - in: path
- *       name: id
+ *       name: product_name
  *       schema:
- *         type: integer
+ *         type: string
  *       required: true
- *       description: ID of the product
+ *       description: Name of the product to be updated
  *     requestBody:
  *       required: true
  *       content:
@@ -72,32 +75,35 @@ router.post('/', productsController.createProduct);
  *           schema:
  *             type: object
  *             properties:
- *               name:
+ *               product_name:
  *                 type: string
  *               price:
  *                 type: number
+ *               expiration_date:
+ *                 type: string
+ *                 format: date
  *     responses:
  *       200:
  *         description: Updated product
  */
-router.put('/:id', productsController.updateProduct);
+router.put('/:product_name', productsController.updateProductByName);
 
 /**
  * @swagger
- * /products/{id}:
+ * /products/{product_name}:
  *   delete:
- *     description: Delete a product by its ID
+ *     description: Delete a product by its name
  *     parameters:
  *     - in: path
- *       name: id
+ *       name: product_name
  *       schema:
- *         type: integer
+ *         type: string
  *       required: true
- *       description: ID of the product
+ *       description: Name of the product to be deleted
  *     responses:
  *       200:
  *         description: Product deleted
  */
-router.delete('/:id', productsController.deleteProduct);
+router.delete('/:product_name', productsController.deleteProductByName);
 
 module.exports = router;
