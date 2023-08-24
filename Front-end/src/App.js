@@ -22,83 +22,123 @@ const navVariants = {
 };
 
 function App() {
-    const [isOpen, setIsOpen] = useState(false);
-    const navRef = useRef(null);
 
-    const closeNav = () => setIsOpen(false);
+    const backgroundColor = useState('90E0EF')[0];
+
+    const navRef = useRef(null);
+    const mouseOutTimerRef = useRef(null);  // Storing the timer in a useRef
+    const [isOpen, setIsOpen] = useState(false); 
+    const closeNav = () => {
+        setIsOpen(false);
+    };
+
+    const delayedCloseNav = () => {
+        mouseOutTimerRef.current = setTimeout(() => {
+            setIsOpen(false);
+        }, 200);
+    };
 
     useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (navRef.current && !navRef.current.contains(event.target)) {
-                closeNav();
+        const currentNavRef = navRef.current;
+
+        const handleMouseOut = (event) => {
+            if (currentNavRef && currentNavRef.contains(event.target)) {
+                delayedCloseNav();
             }
         }
 
-        document.addEventListener('mousedown', handleClickOutside);
+        const handleMouseOver = () => {
+            clearTimeout(mouseOutTimerRef.current);
+        }
+
+        if (currentNavRef) {
+            currentNavRef.addEventListener('mouseout', handleMouseOut);
+            currentNavRef.addEventListener('mouseover', handleMouseOver);
+        }
+
         return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
+            if (currentNavRef) {
+                currentNavRef.removeEventListener('mouseout', handleMouseOut);
+                currentNavRef.removeEventListener('mouseover', handleMouseOver);
+            }
         };
     }, []);
 
+    const linkStyle = {
+        fontSize: '18px',
+        fontFamily: '"Bubblegum Sans", sans-serif',
+        color: '#FFF',
+        textDecoration: 'none',
+        padding: '5px 0',
+        margin: '10px 0', 
+        display: 'block'
+    };
+    
     return (
         <Router>
-            <div>
-                <button onClick={() => setIsOpen(!isOpen)}>Toggle Menu</button>
-                <motion.nav
-                    ref={navRef}
-                    initial={false}
-                    animate={isOpen ? "open" : "closed"}
-                    variants={navVariants}
-                    style={{
-                        position: 'fixed',
-                        top: 0,
-                        left: 0,
-                        bottom: 0,
-                        width: '250px',
-                        background: '#333',
-                        color: '#FFF',
-                        padding: '20px'
-                    }}
-                >
-                    <ul>
-                        <li>
-                            <Link to="/" style={{ color: '#FFF' }} onClick={closeNav}>Home</Link> {/* New Home link */}
-                        </li>
-                        <li>
-                            <Link to="/products" style={{ color: '#FFF' }} onClick={closeNav}>View All Products</Link>
-                        </li>
-                        <li>
-                            <Link to="/search" style={{ color: '#FFF' }} onClick={closeNav}>Search Product</Link>
-                        </li>
-                        <li>
-                            <Link to="/update" style={{ color: '#FFF' }} onClick={closeNav}>Update Product</Link>
-                        </li>
-                        <li>
-                            <Link to="/delete" style={{ color: '#FFF' }} onClick={closeNav}>Delete Product</Link>
-                        </li>
-                        <li>
-                            <Link to="/create" style={{ color: '#FFF' }} onClick={closeNav}>Create Product</Link>
-                        </li>
-                        <li>
-                            <Link to="/login" style={{ color: '#FFF' }} onClick={closeNav}>Login</Link>
-                        </li>
-                        <li>
-                            <Link to="/register" style={{ color: '#FFF' }} onClick={closeNav}>Register</Link>
-                        </li>
-                    </ul>
-                </motion.nav>
+            <div 
+                style={{ 
+                    backgroundColor: backgroundColor,
+                    position: 'fixed', 
+                    top: 0, 
+                    left: 0, 
+                    right: 0,
+                    bottom: 0,
+                    zIndex: -1
+                }}
+            />
+            
+            <div 
+                style={{ 
+                    position: 'fixed', 
+                    top: 0, 
+                    left: 0, 
+                    bottom: 0, 
+                    width: '150px', 
+                    zIndex: 999 
+                }}
+                onMouseOver={() => setIsOpen(true)}
+            />
+            
+            <motion.nav
+                ref={navRef}
+                initial={false}
+                animate={isOpen ? "open" : "closed"}
+                variants={navVariants}
+                style={{
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    bottom: 0,
+                    width: '290px',
+                    background: '#1D1A39',
+                    color: '#FFF',
+                    padding: '17px',
+                    zIndex: 1000
+                }}
+            >
+                <ul>
+                    <li><Link to="/" style={linkStyle} onClick={closeNav}>Home</Link></li>
+                    <li><Link to="/products" style={linkStyle} onClick={closeNav}>View All Products</Link></li>
+                    <li><Link to="/search" style={linkStyle} onClick={closeNav}>Search Product</Link></li>
+                    <li><Link to="/update" style={linkStyle} onClick={closeNav}>Update Product</Link></li>
+                    <li><Link to="/delete" style={linkStyle} onClick={closeNav}>Delete Product</Link></li>
+                    <li><Link to="/create" style={linkStyle} onClick={closeNav}>Create Product</Link></li>
+                    <li><Link to="/login" style={linkStyle} onClick={closeNav}>Login</Link></li>
+                    <li><Link to="/register" style={linkStyle} onClick={closeNav}>Register</Link></li>
+                </ul>
+            </motion.nav>
 
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/register" element={<Register />} />
-                    <Route path="/products" element={<Products />} />
-                    <Route path="/search" element={<SearchProduct />} />
-                    <Route path="/update" element={<UpdateProduct />} />
-                    <Route path="/delete" element={<DeleteProduct />} />
-                    <Route path="/create" element={<CreateProduct />} /> 
-                </Routes>
-            </div>
+            <Routes>
+                <Route path="/" element={<Home bgColor={backgroundColor} />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/search" element={<SearchProduct />} />
+                <Route path="/update" element={<UpdateProduct />} />
+                <Route path="/delete" element={<DeleteProduct />} />
+                <Route path="/create" element={<CreateProduct />} /> 
+            </Routes>
         </Router>
     );
 }

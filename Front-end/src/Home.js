@@ -1,4 +1,3 @@
-// Home.js
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -7,9 +6,10 @@ const greetingVariants = {
     visible: { opacity: 1, transition: { duration: 2 } }
 };
 
-const Home = () => {
+const Home = ({ bgColor }) => {
+
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh' }}>
+        <div style={{ backgroundColor: bgColor, display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh' }}>
             <motion.h1
                 initial="hidden"
                 animate="visible"
