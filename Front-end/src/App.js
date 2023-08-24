@@ -21,6 +21,21 @@ const navVariants = {
     }
 };
 
+const arrowStyle = {
+    position: 'fixed',
+    left: 0,
+    top: '50%',
+    transform: 'translateY(-50%)',
+    fontSize: '2em',
+    background: '#1D1A39',
+    color: '#FFF',
+    cursor: 'pointer',
+    padding: '10px',
+    zIndex: 999,
+    borderTopRightRadius: '5px',
+    borderBottomRightRadius: '5px',
+};
+
 function App() {
 
     const backgroundColor = useState('#CAF0F8')[0];
@@ -66,12 +81,14 @@ function App() {
 
     const linkStyle = {
         fontSize: '18px',
-        fontFamily: '"Bubblegum Sans", sans-serif',
+        fontFamily: 'Montserrat, sans-serif',
+        fontWeight: 600,
         color: '#FFF',
         textDecoration: 'none',
         padding: '5px 0',
         margin: '10px 0', 
-        display: 'block'
+        display: 'block',
+        borderBottom: '2px solid #90E0EF'
     };
     
     return (
@@ -100,6 +117,9 @@ function App() {
                 onMouseOver={() => setIsOpen(true)}
             />
             
+            {!isOpen && <div onClick={() => setIsOpen(true)} style={arrowStyle}>&rarr;</div>}
+                
+
             <motion.nav
                 ref={navRef}
                 initial={false}
@@ -113,11 +133,11 @@ function App() {
                     width: '290px',
                     background: '#1D1A39',
                     color: '#FFF',
-                    padding: '17px',
+                    padding: '20px',
                     zIndex: 1000
                 }}
             >
-                <ul>
+                <ul style={{listStyleType: 'none'}}>
                     <li><Link to="/" style={linkStyle} onClick={closeNav}>Home</Link></li>
                     <li><Link to="/products" style={linkStyle} onClick={closeNav}>View All Products</Link></li>
                     <li><Link to="/search" style={linkStyle} onClick={closeNav}>Search Product</Link></li>

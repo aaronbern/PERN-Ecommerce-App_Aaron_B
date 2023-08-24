@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Products = () => {
     const [products, setProducts] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 15;
+    const itemsPerPage = 30;
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -33,9 +33,12 @@ const Products = () => {
         borderBottom: '3px solid #03045E', 
         padding: '10px 0',
         fontSize: '17px', 
-        width: '50%',      
-        marginLeft: 'auto',
-        marginRight: 'auto',
+        width: '55%',      
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingLeft: 0
     };
 
     const ulStyle = {
@@ -46,6 +49,7 @@ const Products = () => {
         flexDirection: 'column',
         alignItems: 'center'
     };
+
 
     const titleStyle = {
         boxShadow: `
@@ -64,6 +68,11 @@ const Products = () => {
         color: 'white',
         fontFamily: 'Montserrat, sans-serif',
         fontWeight: 700
+    };
+
+    const fontStyle = {
+        fontFamily: 'Montserrat, sans-serif',
+        fontWeight: 400
     };
 
     const paginatedProducts = products.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
@@ -88,15 +97,16 @@ const Products = () => {
             >
                 {paginatedProducts.map((product, index) => (
                     <motion.li 
+                        whileHover={{ scale: 1.17}}
                         key={product.id} 
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ delay: index * 0.1 }}
+                        transition={{ delay: index * 0.3 }}
                         style={productStyle}
                     >
-                        <h3>{product.product_name}</h3>
-                        <p>Price: ${product.price}</p>
-                        <p>Quantity: {product.quantity}</p>
+                        <h3 style={fontStyle}>{product.product_name}</h3>
+                        <p style={fontStyle}>Price: ${product.price}</p>
+                        <p style={fontStyle}>Quantity: {product.quantity}</p>
                     </motion.li>
                 ))}
             </motion.ul>
