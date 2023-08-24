@@ -30,7 +30,7 @@ const Products = () => {
     };
 
     const productStyle = {
-        borderBottom: '1px solid #ccc', 
+        borderBottom: '3px solid #03045E', 
         padding: '10px 0',
         fontSize: '17px', 
         width: '50%',      
@@ -47,6 +47,25 @@ const Products = () => {
         alignItems: 'center'
     };
 
+    const titleStyle = {
+        boxShadow: `
+            1px 1px 0px #0077B6,
+            2px 2px 0px #0077B6,
+            3px 3px 0px #0077B6,
+            4px 4px 0px #0077B6,
+            5px 5px 0px #0077B6,
+            6px 6px 0px #0077B6,
+            7px 7px 0px #0077B6,
+            8px 8px 0px #0077B6,
+            9px 9px 0px #0077B6,
+            10px 10px 0px #0077B6
+        `,
+        backgroundColor: '#03045E',
+        color: 'white',
+        fontFamily: 'Montserrat, sans-serif',
+        fontWeight: 700
+    };
+
     const paginatedProducts = products.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
     const handlePageChange = (direction) => {
@@ -60,7 +79,7 @@ const Products = () => {
 
     return (    
         <div style={containerStyle}>
-            <h2>Products</h2>
+            <h2 style={{...titleStyle, padding : '10px', fontSize: '39px', borderBottom: '2px solid #03045E', borderRight: '2px solid #03045E', borderLeft: '2px solid #03045E', borderTop: '2px solid #03045E'}}>Products</h2>
             <motion.ul
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -75,7 +94,7 @@ const Products = () => {
                         transition={{ delay: index * 0.1 }}
                         style={productStyle}
                     >
-                        <h2>{product.product_name}</h2>
+                        <h3>{product.product_name}</h3>
                         <p>Price: ${product.price}</p>
                         <p>Quantity: {product.quantity}</p>
                     </motion.li>

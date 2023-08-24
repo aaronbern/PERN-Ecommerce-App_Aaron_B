@@ -23,7 +23,7 @@ const navVariants = {
 
 function App() {
 
-    const backgroundColor = useState('90E0EF')[0];
+    const backgroundColor = useState('#CAF0F8')[0];
 
     const navRef = useRef(null);
     const mouseOutTimerRef = useRef(null);  // Storing the timer in a useRef
