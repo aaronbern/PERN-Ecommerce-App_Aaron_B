@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Products = () => {
     const [products, setProducts] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 30;
+    const itemsPerPage = 15;
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -95,20 +95,37 @@ const Products = () => {
                 transition={{ delay: 0.2, duration: 0.5 }}
                 style={ulStyle}
             >
-                {paginatedProducts.map((product, index) => (
-                    <motion.li 
-                        whileHover={{ scale: 1.17}}
-                        key={product.id} 
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: index * 0.3 }}
-                        style={productStyle}
-                    >
-                        <h3 style={fontStyle}>{product.product_name}</h3>
-                        <p style={fontStyle}>Price: ${product.price}</p>
-                        <p style={fontStyle}>Quantity: {product.quantity}</p>
-                    </motion.li>
-                ))}
+                {paginatedProducts.map((product, index) => {
+                    const {
+                        product_id, 
+                        product_name, 
+                        price, 
+                        description,
+                        brand, 
+                        category, 
+                        quantity, 
+                        rating, 
+                        availability, 
+                    } = product;
+
+                    return (
+                        <motion.li 
+                            whileHover={{ scale: 1.17 }}
+                            key={product_id} 
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: index * 0.3 }}
+                            style={productStyle}
+                        >
+                            <h3 style={fontStyle}>{product_name} ({brand}) - ${price}</h3>
+                            <p style={fontStyle}>{description}</p>
+                            <p style={fontStyle}>Category: {category}</p>
+                            <p style={fontStyle}>Quantity: {quantity}</p>
+                            <p style={fontStyle}>Rating: {rating}</p>
+                            <p style={fontStyle}> {availability ? "Available" : "Out of Stock"}</p>
+                        </motion.li>
+                    );
+                })}
             </motion.ul>
             <div>
                 {currentPage > 1 && <button onClick={() => handlePageChange('prev')}>Previous</button>}

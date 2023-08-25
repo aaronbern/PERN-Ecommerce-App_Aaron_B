@@ -1,9 +1,9 @@
 const {
     addProduct,
     getAllProducts,
-    getProductByName,
-    updateProductByName,
-    deleteProductByName
+    getProductById,
+    updateProductById,
+    deleteProductById
 } = require('../models/product');  // import model functions
 
 exports.createProduct = async (req, res) => {
@@ -24,9 +24,9 @@ exports.getAllProducts = async (req, res) => {
     }
 };
 
-exports.getProductByName = async (req, res) => {
+exports.getProductById = async (req, res) => {
     try {
-        const product = await getProductByName(req.params.product_name);
+        const product = await getProductById(req.params.product_id);
         if (!product) {
             res.status(404).json({ message: "Product not found." });
             return;
@@ -37,9 +37,9 @@ exports.getProductByName = async (req, res) => {
     }
 };
 
-exports.updateProductByName = async (req, res) => {
+exports.updateProductById = async (req, res) => {
     try {
-        const product = await updateProductByName(req.params.product_name, req.body);
+        const product = await updateProductById(req.params.product_id, req.body);
         if (!product) {
             res.status(404).json({ message: "Product not found." });
             return;
@@ -50,9 +50,9 @@ exports.updateProductByName = async (req, res) => {
     }
 };
 
-exports.deleteProductByName = async (req, res) => {
+exports.deleteProductById = async (req, res) => {
     try {
-        const product = await deleteProductByName(req.params.product_name);
+        const product = await deleteProductById(req.params.product_id);
         if (!product) {
             res.status(404).json({ message: "Product not found." });
             return;
@@ -62,4 +62,3 @@ exports.deleteProductByName = async (req, res) => {
         res.status(500).json({ error: err.message });
     }
 };
-

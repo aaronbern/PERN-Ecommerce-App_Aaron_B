@@ -15,21 +15,21 @@ router.get('/', productsController.getAllProducts);
 
 /**
  * @swagger
- * /products/{product_name}:
+ * /products/{product_id}:
  *   get:
- *     description: Retrieve a product by its name
+ *     description: Retrieve a product by its ID
  *     parameters:
  *     - in: path
- *       name: product_name
+ *       name: product_id
  *       schema:
- *         type: string
+ *         type: integer
  *       required: true
- *       description: Name of the product
+ *       description: ID of the product
  *     responses:
  *       200:
  *         description: Single product
  */
-router.get('/:product_name', productsController.getProductByName);
+router.get('/:product_id', productsController.getProductById);
 
 /**
  * @swagger
@@ -58,16 +58,16 @@ router.post('/', productsController.createProduct);
 
 /**
  * @swagger
- * /products/{product_name}:
+ * /products/{product_id}:
  *   put:
- *     description: Update a product by its name
+ *     description: Update a product by its ID
  *     parameters:
  *     - in: path
- *       name: product_name
+ *       name: product_id
  *       schema:
- *         type: string
+ *         type: integer
  *       required: true
- *       description: Name of the product to be updated
+ *       description: ID of the product to be updated
  *     requestBody:
  *       required: true
  *       content:
@@ -86,24 +86,24 @@ router.post('/', productsController.createProduct);
  *       200:
  *         description: Updated product
  */
-router.put('/:product_name', productsController.updateProductByName);
+router.put('/:product_id', productsController.updateProductById);
 
 /**
  * @swagger
- * /products/{product_name}:
+ * /products/{product_id}:
  *   delete:
- *     description: Delete a product by its name
+ *     description: Delete a product by its ID
  *     parameters:
  *     - in: path
- *       name: product_name
+ *       name: product_id
  *       schema:
- *         type: string
+ *         type: integer
  *       required: true
- *       description: Name of the product to be deleted
+ *       description: ID of the product to be deleted
  *     responses:
  *       200:
  *         description: Product deleted
  */
-router.delete('/:product_name', productsController.deleteProductByName);
+router.delete('/:product_id', productsController.deleteProductById);
 
 module.exports = router;

@@ -3,15 +3,24 @@ const pool = require('../db/db');
 // Add a new product
 const addProduct = async (productData) => {
     const query = `
-        INSERT INTO products (product_name, expiration_date, price) 
-        VALUES ($1, $2, $3) 
+        INSERT INTO products (product_name, price, description, brand, category, quantity, rating, availability, image_url) 
+        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) 
         RETURNING *;
     `;
-    const values = [productData.product_name, productData.expiration_date, productData.price];
+    const values = [
+        productData.product_name,
+        productData.price,
+        productData.description,
+        productData.brand,
+        productData.category,
+        productData.quantity,
+        productData.rating,
+        productData.availability,
+        productData.image_url
+    ];
     const result = await pool.query(query, values);
     return result.rows[0];
 };
-
 
 // Get all products
 const getAllProducts = async () => {
@@ -19,31 +28,42 @@ const getAllProducts = async () => {
     return result.rows;
 };
 
-// Get a product by name
-const getProductByName = async (productName) => {
-    const query = "SELECT * FROM products WHERE product_name = $1";
-    const values = [productName];
+// Get a product by ID
+const getProductById = async (productId) => {
+    const query = "SELECT * FROM products WHERE product_id = $1";
+    const values = [productId];
     const result = await pool.query(query, values);
     return result.rows[0];
 };
 
-// Update a product by name
-const updateProductByName = async (productName, productData) => {
+// Update a product by ID
+const updateProductById = async (productId, productData) => {
     const query = `
         UPDATE products
-        SET brand=$1, expiration_date=$2, price=$3, quantity=$4, weight=$5, country_of_origin=$6, ingredients=$7, allergens=$8, nutrition_facts=$9
-        WHERE product_name=$10
+        SET product_name=$1, price=$2, description=$3, brand=$4, category=$5, quantity=$6, rating=$7, availability=$8, image_url=$9
+        WHERE product_id=$10
         RETURNING *;
     `;
-    const values = [productData.brand, productData.expiration_date, productData.price, productData.quantity, productData.weight, productData.country_of_origin, productData.ingredients, productData.allergens, productData.nutrition_facts, productName];
+    const values = [
+        productData.product_name,
+        productData.price,
+        productData.description,
+        productData.brand,
+        productData.category,
+        productData.quantity,
+        productData.rating,
+        productData.availability,
+        productData.image_url,
+        productId
+    ];
     const result = await pool.query(query, values);
     return result.rows[0];
 };
 
-// Delete a product by name
-const deleteProductByName = async (productName) => {
-    const query = "DELETE FROM products WHERE product_name = $1 RETURNING *";
-    const values = [productName];
+// Delete a product by ID
+const deleteProductById = async (productId) => {
+    const query = "DELETE FROM products WHERE product_id = $1 RETURNING *";
+    const values = [productId];
     const result = await pool.query(query, values);
     return result.rows[0];
 };
@@ -51,7 +71,7 @@ const deleteProductByName = async (productName) => {
 module.exports = {
     addProduct,
     getAllProducts,
-    getProductByName,
-    updateProductByName,
-    deleteProductByName
+    getProductById,
+    updateProductById,
+    deleteProductById
 };

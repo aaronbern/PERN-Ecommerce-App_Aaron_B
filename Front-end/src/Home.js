@@ -14,9 +14,9 @@ const Home = ({ bgColor }) => {
                 initial="hidden"
                 animate="visible"
                 variants={greetingVariants}
-                style={{ fontSize: '2rem', fontWeight: 'bold' }}
+                style={{fontFamily: 'Montserrat, sans-serif', fontSize: '1.7rem', fontWeight: 'bold' }}
             >
-                Simple PERN E-Commerce App
+                Welcome to Aaron's Store
             </motion.h1>
         </div>
     );

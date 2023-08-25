@@ -85,8 +85,8 @@ function App() {
         fontWeight: 600,
         color: '#FFF',
         textDecoration: 'none',
-        padding: '5px 0',
-        margin: '10px 0', 
+        padding: '0px 0',
+        margin: '12px 0', 
         display: 'block',
         borderBottom: '2px solid #90E0EF'
     };
@@ -111,7 +111,7 @@ function App() {
                     top: 0, 
                     left: 0, 
                     bottom: 0, 
-                    width: '150px', 
+                    width: '190px', 
                     zIndex: 999 
                 }}
                 onMouseOver={() => setIsOpen(true)}
@@ -130,14 +130,14 @@ function App() {
                     top: 0,
                     left: 0,
                     bottom: 0,
-                    width: '290px',
+                    width: '150px',
                     background: '#1D1A39',
                     color: '#FFF',
-                    padding: '20px',
+                    padding: '15px 15px 15px 5px',
                     zIndex: 1000
                 }}
             >
-                <ul style={{listStyleType: 'none'}}>
+                <ul style={{listStyleType: 'none', margin: '4px', padding: '4px'}}>
                     <li><Link to="/" style={linkStyle} onClick={closeNav}>Home</Link></li>
                     <li><Link to="/products" style={linkStyle} onClick={closeNav}>View All Products</Link></li>
                     <li><Link to="/search" style={linkStyle} onClick={closeNav}>Search Product</Link></li>
