@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import axios from './axiosConfig';
 import { motion } from 'framer-motion';
+import './Products.css';
 
 const Products = () => {
     const [products, setProducts] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 15;
+    const [cart, setCart] = useState([]);
+    const [showCart, setShowCart] = useState(false);
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -20,6 +23,14 @@ const Products = () => {
         fetchProducts();
     }, []);
 
+    const addToCart = (product) => {
+        setCart([...cart, product]);
+    };
+
+    const toggleCart = () => {
+        setShowCart(!showCart);
+    };
+
     const containerStyle = {
         display: 'flex',
         flexDirection: 'column',
@@ -29,27 +40,10 @@ const Products = () => {
         paddingLeft: 0,
     };
 
-    const productStyle = {
-        borderBottom: '3px solid #03045E', 
-        padding: '10px 0',
-        fontSize: '17px', 
-        width: '55%',      
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        paddingLeft: 0
+    const truncateText = (text, maxLength = 100) => {
+        if (text.length <= maxLength) return text;
+        return `${text.substring(0, maxLength)}...`;
     };
-
-    const ulStyle = {
-        width: '100%',
-        listStyleType: 'none',  
-        paddingLeft: 0,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center'
-    };
-
 
     const titleStyle = {
         boxShadow: `
@@ -67,12 +61,52 @@ const Products = () => {
         backgroundColor: '#03045E',
         color: 'white',
         fontFamily: 'Montserrat, sans-serif',
-        fontWeight: 700
+        fontWeight: 700,
+        fontSize: '30px'
     };
 
     const fontStyle = {
         fontFamily: 'Montserrat, sans-serif',
-        fontWeight: 400
+        fontWeight: 400,
+        fontSize: '11px',
+        userSelect: 'none',
+        pointerEvents: 'none'
+    };
+
+    const productGridStyle = {
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))', // responsive grid
+        gap: '20px',
+        width: '90%',  
+        maxWidth: '1200px', 
+        margin: '20px auto'
+    };
+    
+    const productNameStyle = {
+        ...fontStyle,
+        fontSize: '16px',
+        fontWeight: 500,
+        userSelect: 'none',
+        pointerEvents: 'none'
+    };
+    
+    const productCardStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        border: '1px solid #E0E0E0',
+        borderRadius: '10px',
+        padding: '10px',
+        boxShadow: '0px 0px 15px rgba(0,0,0,0.1)',
+        transition: 'transform 0.3s',
+        height: '400px',
+        cursor: 'pointer'
+    };
+    
+    const imageStyle = {
+        width: '100%',
+        height: '130px',
+        objectFit: 'cover',
+        marginBottom: '15px'
     };
 
     const paginatedProducts = products.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
@@ -86,14 +120,14 @@ const Products = () => {
         window.scrollTo(0, 0);
     };
 
-    return (    
+    return (
         <div style={containerStyle}>
             <h2 style={{...titleStyle, padding : '10px', fontSize: '39px', borderBottom: '2px solid #03045E', borderRight: '2px solid #03045E', borderLeft: '2px solid #03045E', borderTop: '2px solid #03045E'}}>Products</h2>
-            <motion.ul
+            <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
-                style={ulStyle}
+                style={productGridStyle}
             >
                 {paginatedProducts.map((product, index) => {
                     const {
@@ -106,32 +140,59 @@ const Products = () => {
                         quantity, 
                         rating, 
                         availability, 
+                        image_url
                     } = product;
-
+    
                     return (
-                        <motion.li 
-                            whileHover={{ scale: 1.17 }}
-                            key={product_id} 
+                        <motion.div
+                            whileHover={{ scale: 1.05 }}
+                            key={product_id}
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ delay: index * 0.3 }}
-                            style={productStyle}
+                            transition={{ delay: 0.1 }}
+                            style={productCardStyle}
                         >
-                            <h3 style={fontStyle}>{product_name} ({brand}) - ${price}</h3>
-                            <p style={fontStyle}>{description}</p>
+                            <img src={image_url} alt="" style={imageStyle} />
+                            <h3 style={productNameStyle}>{truncateText(product_name, 50)} ({brand})</h3>
+                            <p style={fontStyle}>{truncateText(description, 100)}</p>
                             <p style={fontStyle}>Category: {category}</p>
                             <p style={fontStyle}>Quantity: {quantity}</p>
-                            <p style={fontStyle}>Rating: {rating}</p>
-                            <p style={fontStyle}> {availability ? "Available" : "Out of Stock"}</p>
-                        </motion.li>
+                            <p style={fontStyle}>Rating: {Array(Math.round(rating)).fill('⭐').join('')}</p> 
+                            <p style={fontStyle}>
+                                <span>{availability ? "Available" : "Out of Stock"}</span>
+                                <span style={{ marginLeft: '20px' }}>${price}</span>
+                            </p>
+                            <button 
+                                className="addToCartButton"
+                                onClick={() => addToCart(product)}
+                            >
+                                Add to Cart
+                            </button>
+                        </motion.div>
                     );
                 })}
-            </motion.ul>
+            </motion.div>
             <div>
                 {currentPage > 1 && <button onClick={() => handlePageChange('prev')}>Previous</button>}
                 <span padding='15px'>Page {currentPage}</span>
                 {products.length > currentPage * itemsPerPage && <button onClick={() => handlePageChange('next')}>Next</button>}
             </div>
+            <div 
+                style={{ 
+                    position: 'fixed', 
+                    top: '10px', 
+                    right: '10px', 
+                    cursor: 'pointer' 
+                }}
+                onClick={toggleCart}
+            >
+                🛒 {cart.length}
+            </div>
+            {showCart &&
+                <div style={{ position: 'fixed', top: '40px', right: '10px', border: '1px solid black', backgroundColor: 'white' }}>
+                    {cart.map(item => <div key={item.id}>{item.name}</div>)}
+                </div>
+            }
         </div>
     );
 };

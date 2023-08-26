@@ -7,8 +7,8 @@ const DeleteProduct = () => {
 
     const handleSearch = async () => {
         try {
-            const response = await axios.get(`/products/${productName}`);
-            setResults([response.data]); // Since it returns a single product, wrap it in an array
+            const response = await axios.get(`/products/name/${productName}`);
+            setResults(response.data); // Update to match the response structure
         } catch (error) {
             console.error("Error searching products:", error.response.data);
         }
@@ -16,7 +16,7 @@ const DeleteProduct = () => {
 
     const handleDelete = async (productId) => {
         try {
-            await axios.delete(`/products/${productId}`);
+            await axios.delete(`/products/id/${productId}`);
             alert('Product deleted successfully!');
             // Refresh results after deletion
             handleSearch();
@@ -40,9 +40,9 @@ const DeleteProduct = () => {
             
             <ul>
                 {results.map(product => (
-                    <li key={product.id}>
+                    <li key={product.product_id}>
                         <h3>{product.product_name}</h3>
-                        <button onClick={() => handleDelete(product.id)}>Delete</button>
+                        <button onClick={() => handleDelete(product.product_name)}>Delete</button>
                     </li>
                 ))}
             </ul>

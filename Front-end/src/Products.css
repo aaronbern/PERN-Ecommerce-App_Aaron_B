@@ -1,0 +1,27 @@
+.addToCartButton {
+    background-color: #03045E;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: 'Montserrat, sans-serif';
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addToCartButton:hover {
+    background-color: #7400b8;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.addToCartButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #0077B6;
+}

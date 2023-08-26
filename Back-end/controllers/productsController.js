@@ -24,41 +24,37 @@ exports.getAllProducts = async (req, res) => {
     }
 };
 
-exports.getProductById = async (req, res) => {
+exports.updateProductByName = async (req, res) => {
     try {
-        const product = await getProductById(req.params.product_id);
-        if (!product) {
-            res.status(404).json({ message: "Product not found." });
-            return;
+        const productName = req.params.product_name;
+        const updatedData = req.body;
+        
+        const updatedProduct = await productsModel.updateProductByName(productName, updatedData);
+
+        if (!updatedProduct) {
+            return res.status(404).json({ message: "Product not found" });
         }
-        res.status(200).json(product);
-    } catch (err) {
-        res.status(500).json({ error: err.message });
+
+        return res.status(200).json(updatedProduct);
+
+    } catch (error) {
+        return res.status(500).json({ error: error.message });
     }
 };
 
-exports.updateProductById = async (req, res) => {
-    try {
-        const product = await updateProductById(req.params.product_id, req.body);
-        if (!product) {
-            res.status(404).json({ message: "Product not found." });
-            return;
-        }
-        res.status(200).json(product);
-    } catch (err) {
-        res.status(500).json({ error: err.message });
-    }
+
+// Get a product by Name
+const getProductByName = async (productName) => {
+    const query = "SELECT * FROM products WHERE product_name = $1";
+    const values = [productName];
+    const result = await pool.query(query, values);
+    return result.rows[0];
 };
 
-exports.deleteProductById = async (req, res) => {
-    try {
-        const product = await deleteProductById(req.params.product_id);
-        if (!product) {
-            res.status(404).json({ message: "Product not found." });
-            return;
-        }
-        res.status(200).json({ message: "Product deleted successfully." });
-    } catch (err) {
-        res.status(500).json({ error: err.message });
-    }
+// Delete a product by Name
+const deleteProductByName = async (productName) => {
+    const query = "DELETE FROM products WHERE product_name = $1 RETURNING *";
+    const values = [productName];
+    const result = await pool.query(query, values);
+    return result.rows[0];
 };

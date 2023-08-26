@@ -108,10 +108,10 @@ function App() {
             <div 
                 style={{ 
                     position: 'fixed', 
-                    top: 0, 
+                    top: '40%', 
                     left: 0, 
-                    bottom: 0, 
-                    width: '190px', 
+                    bottom: '40%', 
+                    width: '50px', 
                     zIndex: 999 
                 }}
                 onMouseOver={() => setIsOpen(true)}

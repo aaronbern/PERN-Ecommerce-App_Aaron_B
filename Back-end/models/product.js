@@ -36,29 +36,26 @@ const getProductById = async (productId) => {
     return result.rows[0];
 };
 
-// Update a product by ID
-const updateProductById = async (productId, productData) => {
+// Update a product by NAME
+const updateProductByName = async (productName, productData) => {
     const query = `
         UPDATE products
-        SET product_name=$1, price=$2, description=$3, brand=$4, category=$5, quantity=$6, rating=$7, availability=$8, image_url=$9
-        WHERE product_id=$10
-        RETURNING *;
+        SET product_name=$1, price=$2, ...  // list all the columns you want to update
+        WHERE product_name=$X
+        RETURNING *; 
     `;
+
     const values = [
         productData.product_name,
         productData.price,
-        productData.description,
-        productData.brand,
-        productData.category,
-        productData.quantity,
-        productData.rating,
-        productData.availability,
-        productData.image_url,
-        productId
+        ...  // other product data attributes
+        productName
     ];
+
     const result = await pool.query(query, values);
     return result.rows[0];
 };
+
 
 // Delete a product by ID
 const deleteProductById = async (productId) => {
@@ -68,10 +65,27 @@ const deleteProductById = async (productId) => {
     return result.rows[0];
 };
 
+const getProductByName = async (productName) => {
+    const query = "SELECT * FROM products WHERE product_name = $1";
+    const values = [productName];
+    const result = await pool.query(query, values);
+    return result.rows[0];
+};
+
+const deleteProductByName = async (productName) => {
+    const query = "DELETE FROM products WHERE product_name = $1 RETURNING *";
+    const values = [productName];
+    const result = await pool.query(query, values);
+    return result.rows[0];
+};
+
+
 module.exports = {
     addProduct,
     getAllProducts,
     getProductById,
     updateProductById,
-    deleteProductById
+    deleteProductById,
+    getProductByName,     // newly added
+    deleteProductByName  // newly added
 };
