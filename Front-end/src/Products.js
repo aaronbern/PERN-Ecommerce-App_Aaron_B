@@ -7,8 +7,8 @@ const Products = () => {
     const [products, setProducts] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 15;
-    const [cart, setCart] = useState([]);
-    const [showCart, setShowCart] = useState(false);
+    //const [cart, setCart] = useState([]);
+    //const [showCart, setShowCart] = useState(false);
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -23,13 +23,39 @@ const Products = () => {
         fetchProducts();
     }, []);
 
-    const addToCart = (product) => {
-        setCart([...cart, product]);
+    /*const addToCart = async (product) => {
+        try {
+            const response = await axios.post('/cart', {
+                //userId: YOUR_USER_ID, // You need to provide this
+                productId: product.product_id,
+                price: product.price
+            });
+            
+            if(response.status === 200) {
+                setCart([...cart, product]);
+            }
+        } catch (error) {
+            console.error("Error adding product to cart:", error.response.data);
+        }
     };
+    
+    const fetchCartItems = async () => {
+    try {
+        const response = await axios.get(`/cart/${YOUR_USER_ID}`); // You need to provide this
+        setCart(response.data);
+    } catch (error) {
+        console.error("Error fetching cart items:", error.response.data);
+    }
+};
+
 
     const toggleCart = () => {
+        if (!showCart) {
+            fetchCartItems();
+        }
         setShowCart(!showCart);
     };
+    */
 
     const containerStyle = {
         display: 'flex',
@@ -162,12 +188,12 @@ const Products = () => {
                                 <span>{availability ? "Available" : "Out of Stock"}</span>
                                 <span style={{ marginLeft: '20px' }}>${price}</span>
                             </p>
-                            <button 
+                            {/*<button 
                                 className="addToCartButton"
                                 onClick={() => addToCart(product)}
                             >
                                 Add to Cart
-                            </button>
+                            </button>*/}
                         </motion.div>
                     );
                 })}
@@ -177,7 +203,7 @@ const Products = () => {
                 <span padding='15px'>Page {currentPage}</span>
                 {products.length > currentPage * itemsPerPage && <button onClick={() => handlePageChange('next')}>Next</button>}
             </div>
-            <div 
+            {/*<div 
                 style={{ 
                     position: 'fixed', 
                     top: '10px', 
@@ -189,10 +215,10 @@ const Products = () => {
                 🛒 {cart.length}
             </div>
             {showCart &&
-                <div style={{ position: 'fixed', top: '40px', right: '10px', border: '1px solid black', backgroundColor: 'white' }}>
-                    {cart.map(item => <div key={item.id}>{item.name}</div>)}
+                <div style={{ position: 'fixed', zIndex: 1002, top: '40px', right: '10px', border: '1px solid black', backgroundColor: 'white' }}>
+                    {cart.map(item => <div key={item.product_id}>{item.product_name}</div>)}
                 </div>
-            }
+            }*/}
         </div>
     );
 };

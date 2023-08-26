@@ -1,7 +1,7 @@
 const { createUser, getUserByUsername, updateUserPassword, deleteUser } = require('../models/user');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const { addItemToCart } = require('../models/cart');
+const { addItemToCart } = require('../models/cartModel');
 
 exports.registerUser = async (req, res) => {
     try {

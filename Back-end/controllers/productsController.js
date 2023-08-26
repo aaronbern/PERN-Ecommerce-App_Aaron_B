@@ -1,10 +1,10 @@
 const {
     addProduct,
     getAllProducts,
-    getProductById,
-    updateProductById,
-    deleteProductById
-} = require('../models/product');  // import model functions
+    getProductByName,
+    updateProductByName,
+    deleteProductByName
+} = require('../models/product'); // import model functions
 
 exports.createProduct = async (req, res) => {
     try {
@@ -29,7 +29,7 @@ exports.updateProductByName = async (req, res) => {
         const productName = req.params.product_name;
         const updatedData = req.body;
         
-        const updatedProduct = await productsModel.updateProductByName(productName, updatedData);
+        const updatedProduct = await updateProductByName(productName, updatedData);
 
         if (!updatedProduct) {
             return res.status(404).json({ message: "Product not found" });
@@ -42,19 +42,5 @@ exports.updateProductByName = async (req, res) => {
     }
 };
 
-
-// Get a product by Name
-const getProductByName = async (productName) => {
-    const query = "SELECT * FROM products WHERE product_name = $1";
-    const values = [productName];
-    const result = await pool.query(query, values);
-    return result.rows[0];
-};
-
-// Delete a product by Name
-const deleteProductByName = async (productName) => {
-    const query = "DELETE FROM products WHERE product_name = $1 RETURNING *";
-    const values = [productName];
-    const result = await pool.query(query, values);
-    return result.rows[0];
-};
+exports.getProductByName = getProductByName;
+exports.deleteProductByName = deleteProductByName;

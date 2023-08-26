@@ -56,15 +56,6 @@ const updateProductByName = async (productName, productData) => {
     return result.rows[0];
 };
 
-
-// Delete a product by ID
-const deleteProductById = async (productId) => {
-    const query = "DELETE FROM products WHERE product_id = $1 RETURNING *";
-    const values = [productId];
-    const result = await pool.query(query, values);
-    return result.rows[0];
-};
-
 const getProductByName = async (productName) => {
     const query = "SELECT * FROM products WHERE product_name = $1";
     const values = [productName];
@@ -84,8 +75,7 @@ module.exports = {
     addProduct,
     getAllProducts,
     getProductById,
-    updateProductById,
-    deleteProductById,
+    updateProductByName,
     getProductByName,     // newly added
     deleteProductByName  // newly added
 };

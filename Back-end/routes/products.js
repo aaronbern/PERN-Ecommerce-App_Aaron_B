@@ -1,6 +1,16 @@
 const express = require('express');
 const router = express.Router();
 const productsController = require('../controllers/productsController');
+/**
+* @swagger
+* /products:
+*   get:
+*     description: Retrieve all products
+*     responses:
+*       200:
+*         description: List of all products
+*/
+router.get('/', productsController.getAllProducts);
 
 /**
  * @swagger
@@ -60,10 +70,10 @@ router.delete('/:product_name', productsController.deleteProductByName);
  *               product_name:
  *                 type: string
  *               price:
- *                 type: number
- *               ...  // other product attributes you want to update
- *     responses:
- *       200:
+ *                 type: 
+ *                  number 200:
  *         description: Updated product
  */
 router.put('/:product_name', productsController.updateProductByName);
+
+module.exports = router;
